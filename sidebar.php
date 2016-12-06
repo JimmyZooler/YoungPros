@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Young_Pros_Show
+ * @package Young_Pros
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

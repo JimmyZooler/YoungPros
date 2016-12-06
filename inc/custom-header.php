@@ -12,33 +12,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Young_Pros_Show
+ * @package Young_Pros
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses young_pros_show_header_style()
+ * @uses youngpros_header_style()
  */
-function young_pros_show_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'young_pros_show_custom_header_args', array(
+function youngpros_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'youngpros_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'young_pros_show_header_style',
+		'wp-head-callback'       => 'youngpros_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'young_pros_show_custom_header_setup' );
+add_action( 'after_setup_theme', 'youngpros_custom_header_setup' );
 
-if ( ! function_exists( 'young_pros_show_header_style' ) ) :
+if ( ! function_exists( 'youngpros_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see young_pros_show_custom_header_setup().
+ * @see youngpros_custom_header_setup().
  */
-function young_pros_show_header_style() {
+function youngpros_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

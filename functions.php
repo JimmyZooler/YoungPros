@@ -1,13 +1,13 @@
 <?php
 /**
- * Young Pros Show functions and definitions.
+ * Young Pros functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Young_Pros_Show
+ * @package Young_Pros
  */
 
-if ( ! function_exists( 'young_pros_show_setup' ) ) :
+if ( ! function_exists( 'youngpros_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'young_pros_show_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function young_pros_show_setup() {
+function youngpros_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Young Pros Show, use a find and replace
-	 * to change 'young-pros-show' to the name of your theme in all the template files.
+	 * If you're building a theme based on Young Pros, use a find and replace
+	 * to change 'youngpros' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'young-pros-show', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'youngpros', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function young_pros_show_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'young-pros-show' ),
+		'primary' => esc_html__( 'Primary', 'youngpros' ),
 	) );
 
 	/*
@@ -60,13 +60,13 @@ function young_pros_show_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'young_pros_show_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'youngpros_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'young_pros_show_setup' );
+add_action( 'after_setup_theme', 'youngpros_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -75,44 +75,44 @@ add_action( 'after_setup_theme', 'young_pros_show_setup' );
  *
  * @global int $content_width
  */
-function young_pros_show_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'young_pros_show_content_width', 640 );
+function youngpros_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'youngpros_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'young_pros_show_content_width', 0 );
+add_action( 'after_setup_theme', 'youngpros_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function young_pros_show_widgets_init() {
+function youngpros_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'young-pros-show' ),
+		'name'          => esc_html__( 'Sidebar', 'youngpros' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'young-pros-show' ),
+		'description'   => esc_html__( 'Add widgets here.', 'youngpros' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'young_pros_show_widgets_init' );
+add_action( 'widgets_init', 'youngpros_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function young_pros_show_scripts() {
-	wp_enqueue_style( 'young-pros-show-style', get_stylesheet_uri() );
+function youngpros_scripts() {
+	wp_enqueue_style( 'youngpros-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'young-pros-show-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'youngpros-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'young-pros-show-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'youngpros-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'young_pros_show_scripts' );
+add_action( 'wp_enqueue_scripts', 'youngpros_scripts' );
 
 /**
  * Implement the Custom Header feature.

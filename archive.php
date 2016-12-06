@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Young_Pros_Show
+ * @package Young_Pros
  */
 
 get_header(); ?>
