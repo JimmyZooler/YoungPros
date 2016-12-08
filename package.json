@@ -1,0 +1,23 @@
+{
+  "name": "young-pros-show",
+  "version": "1.0.0",
+  "description": "Theme for Young Pros Show webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmyzooler/YoungPros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmyzooler/YoungPros/issues"
+  },
+  "homepage": "https://github.com/jimmyzooler/YoungPros#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
