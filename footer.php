@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'youngpros' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'youngpros' ), 'WordPress' ); ?></a>
+			© Young Pros 2016
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'youngpros' ), 'youngpros', '<a href="http://geometricwebdesign.com" rel="designer">Craig Rushon</a>' ); ?>
+			<?php printf( esc_html__( 'Development %1$s by %2$s.', 'youngpros' ), '', '<a href="http://geometricwebdesign.com" rel="designer">Craig Rushon</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

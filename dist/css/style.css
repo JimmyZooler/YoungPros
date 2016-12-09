@@ -2422,6 +2422,33 @@ Custom Styles
   margin: 0 auto;
   overflow: auto; }
 
+#home-page-intro {
+  text-transform: uppercase;
+  text-align: center; }
+  #home-page-intro h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #081e39; }
+  #home-page-intro h2 {
+    font-size: 1.875rem;
+    margin-bottom: 0;
+    margin-top: 3.75rem; }
+  #home-page-intro #video-container {
+    height: 400px;
+    width: 700px;
+    border: 4px solid #ddd;
+    background-color: #373737;
+    margin: 0 auto; }
+  #home-page-intro h3 {
+    font-size: 2.25rem;
+    font-style: italic;
+    max-width: 700px;
+    color: #081e39;
+    margin: 60px auto; }
+
+.site-footer {
+  text-align: center; }
+
 /*-------------------------------------------------------------
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -2614,7 +2641,8 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: Raleway, Helvetica, Roboto, Arial, sans-serif; }
 
 p {
   margin-bottom: 1.5em; }
