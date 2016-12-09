@@ -42,6 +42,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+@import "partials/settings";
+@import "partials/foundation";
+
+/*-------------------------------------------------------------
+--------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 

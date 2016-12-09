@@ -1,0 +1,38 @@
+/*@import "../bower_components/foundation/scss/foundation";*/
+@import "../bower_components/foundation/scss/foundation/components/top-bar";
+@import "../bower_components/foundation/scss/foundation/components/buttons";
+@import "../bower_components/foundation/scss/foundation/components/visibility";
+@import "../bower_components/foundation/scss/foundation/components/grid";
+
+/*-----------------------------------
+
+Custom Styles
+
+-------------------------------------*/
+
+.top-bar {
+    line-height: 80/16 + rem;
+    height: 80/16 + rem;
+    
+    img:hover {
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (min-width: 40.0625em) {
+.top-bar-section li:not(.has-form) a:not(.button) {
+    line-height: 80/16 + rem; }
+}
+
+.top-bar-section ul li > a { 
+    font-size: 20 / 16 + rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Raleway, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.container {
+    max-width: $global-width;
+    margin: 0 auto;
+    overflow: auto;
+}

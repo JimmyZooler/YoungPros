@@ -1,0 +1,18 @@
+{
+  "name": "young-pros-show",
+  "description": "Theme for Young Pros Show webpage",
+  "main": "index.js",
+  "authors": [
+    "Jimmy Zooler <jimmy.zooler.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jimmyzooler/YoungPros",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
