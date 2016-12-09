@@ -2406,9 +2406,8 @@ Custom Styles
   .top-bar img:hover {
     opacity: 0.7; }
 
-@media only screen and (min-width: 40.0625em) {
-  .top-bar-section li:not(.has-form) a:not(.button) {
-    line-height: 5rem; } }
+.top-bar-section li:not(.has-form) a:not(.button) {
+  line-height: 5rem; }
 
 .top-bar-section ul li > a {
   font-size: 1.25rem;
