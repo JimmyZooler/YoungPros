@@ -62,6 +62,7 @@ $dark-gray: #8a8a8a;
 $dark-blue: #081e39;
 $orange: #ed7134;
 $red: #b22222;
+$lighter-red: #c84646;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -246,11 +247,11 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $red;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 0;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,

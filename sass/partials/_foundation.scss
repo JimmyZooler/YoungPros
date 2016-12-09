@@ -11,6 +11,10 @@ Custom Styles
 
 -------------------------------------*/
 
+p {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
 .top-bar {
     line-height: 80/16 + rem;
     height: 80/16 + rem;
@@ -51,7 +55,7 @@ Custom Styles
     }
     #video-container {
         height: 400px;
-        width: 700px;
+        width: 100%;
         border: 4px solid #ddd;
         background-color: #373737;
         margin: 0 auto;
@@ -67,4 +71,64 @@ Custom Styles
 
 .site-footer {
     text-align: center;
+}
+
+.overlay-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-blue;
+    opacity: 0.7;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.subscription-bar {
+    text-align: center;
+    padding: 60px 0 70px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    p {
+        font-size: 20 / 16 + rem;
+        color: #fff;
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row {
+        position: relative;
+        z-index: 4;
+    }
+    
+    button {
+            font-size: 80%;
+        }
+}
+
+button {
+    font-family: Raleway, sans-serif !important;
+    font-weight: bold !important;
+    background-color: $red !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    transition: background-color 300ms ease-out;
+}
+button:hover {
+    background-color: $lighter-red !important;
+}
+
+@media (min-width: 550px) { 
+    
+    .subscription-bar {
+        p {
+            font-size: 28 / 16 + rem;
+        }
+        button {
+            font-size: 100%;
+        }
+    }
+
 }
