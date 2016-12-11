@@ -2395,109 +2395,6 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-/*-----------------------------------
-
-Custom Styles
-
--------------------------------------*/
-p {
-  font-family: Lato, Helvetica, sans-serif; }
-
-.top-bar {
-  line-height: 5rem;
-  height: 5rem; }
-  .top-bar img {
-    transition: opacity 0.3s; }
-  .top-bar img:hover {
-    opacity: 0.7; }
-
-.top-bar-section li:not(.has-form) a:not(.button) {
-  line-height: 5rem; }
-
-.top-bar-section ul li > a {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Raleway, Helvetica, Roboto, Arial, sans-serif; }
-
-.container {
-  max-width: 75rem;
-  margin: 0 auto;
-  overflow: auto; }
-
-#home-page-intro {
-  text-transform: uppercase;
-  text-align: center; }
-  #home-page-intro h1 {
-    font-size: 3rem;
-    margin-top: 0;
-    color: #081e39; }
-  #home-page-intro h2 {
-    font-size: 1.875rem;
-    margin-bottom: 0;
-    margin-top: 3.75rem; }
-  #home-page-intro #video-container {
-    height: 400px;
-    width: 100%;
-    border: 4px solid #ddd;
-    background-color: #373737;
-    margin: 0 auto; }
-  #home-page-intro h3 {
-    font-size: 2.25rem;
-    font-style: italic;
-    max-width: 700px;
-    color: #081e39;
-    margin: 60px auto; }
-
-.site-footer {
-  text-align: center; }
-
-.overlay-blue {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #081e39;
-  opacity: 0.7;
-  z-index: 3;
-  top: 0;
-  left: 0; }
-
-.subscription-bar {
-  text-align: center;
-  padding: 60px 0 70px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  .subscription-bar p {
-    font-size: 1.25rem;
-    color: #fff;
-    max-width: 660px;
-    margin-left: auto;
-    margin-right: auto; }
-  .subscription-bar .row {
-    position: relative;
-    z-index: 4; }
-  .subscription-bar button {
-    font-size: 80%; }
-
-button {
-  font-family: Raleway, sans-serif !important;
-  font-weight: bold !important;
-  background-color: #b22222 !important;
-  color: #fff !important;
-  text-transform: uppercase !important;
-  transition: background-color 300ms ease-out; }
-
-button:hover {
-  background-color: #c84646 !important; }
-
-@media (min-width: 550px) {
-  .subscription-bar p {
-    font-size: 1.75rem; }
-  .subscription-bar button {
-    font-size: 100%; } }
-
 /*-------------------------------------------------------------
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -3154,3 +3051,156 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*-----------------------------------
+# Custom Styles
+-------------------------------------*/
+p {
+  font-family: Lato, Helvetica, sans-serif; }
+
+.top-bar {
+  line-height: 5rem;
+  height: 5rem; }
+  .top-bar img {
+    transition: opacity 0.3s; }
+  .top-bar img:hover {
+    opacity: 0.7; }
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  line-height: 5rem; }
+
+.top-bar-section ul li > a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Raleway, Helvetica, Roboto, Arial, sans-serif; }
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: auto; }
+
+#home-page-intro {
+  text-transform: uppercase;
+  text-align: center; }
+  #home-page-intro h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #081e39; }
+  #home-page-intro h2 {
+    font-size: 1.875rem;
+    margin-bottom: 0;
+    margin-top: 3.75rem; }
+  #home-page-intro #video-container {
+    height: 400px;
+    width: 100%;
+    border: 4px solid #ddd;
+    background-color: #373737;
+    margin: 0 auto; }
+  #home-page-intro h3 {
+    font-size: 1.875rem;
+    font-style: italic;
+    max-width: 700px;
+    color: #081e39;
+    margin: 60px auto; }
+
+.site-footer {
+  text-align: center; }
+
+.overlay-blue {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #081e39;
+  opacity: 0.7;
+  z-index: 3;
+  top: 0;
+  left: 0; }
+
+.subscription-bar {
+  text-align: center;
+  padding: 60px 0 70px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .subscription-bar p {
+    font-size: 1.25rem;
+    color: #fff;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto; }
+  .subscription-bar .row {
+    position: relative;
+    z-index: 4; }
+  .subscription-bar button {
+    font-size: 80%; }
+
+button {
+  font-family: Raleway, sans-serif !important;
+  font-weight: bold !important;
+  background-color: #b22222 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  transition: background-color 300ms ease-out; }
+
+button:hover {
+  background-color: #c84646 !important; }
+
+#episodes {
+  text-align: center;
+  padding-top: 3.125rem; }
+  #episodes div h2 {
+    font-size: 3rem;
+    max-width: 360px;
+    border-bottom: 1px solid #ebebeb;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    margin-bottom: 55px; }
+
+.photogal > :nth-child(3n+3) {
+  margin-right: 0; }
+
+.photogal {
+  margin: 40px 0 40px;
+  padding: 0; }
+
+.photogal li {
+  list-style: none;
+  list-style-type: none;
+  margin-right: 3.5%;
+  margin-bottom: 30px;
+  text-align: right; }
+  .photogal li .gallery-meta {
+    padding-right: 5px; }
+    .photogal li .gallery-meta h3 {
+      margin-top: 5px;
+      font-weight: normal; }
+
+/* line 42, ../sass/style.scss */
+ul.photogal li {
+  width: 31%;
+  float: left; }
+
+/* line 45, ../sass/style.scss */
+ul.photogal li a {
+  width: 100.1%;
+  display: block; }
+
+/* line 49, ../sass/style.scss */
+ul.photogal li a img {
+  display: block;
+  max-width: 100.1%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */ }
+
+@media (min-width: 550px) {
+  .subscription-bar p {
+    font-size: 1.75rem; }
+  .subscription-bar button {
+    font-size: 100%; }
+  #home-page-intro h3 {
+    font-size: 2.25rem; } }

@@ -21,5 +21,11 @@ Template Name: Home Page
         </div>
         <div class='overlay-blue'></div>
     </section>
+<section id="episodes">
+    <div class="row text-center">
+        <h2>Episodes</h2>
+        <?php get_template_part( 'template-parts/gallery', 'none' ); ?>
+    </div>
+</section>
 
 <?php get_footer(); ?>

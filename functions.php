@@ -64,6 +64,7 @@ function youngpros_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+        
 }
 endif;
 add_action( 'after_setup_theme', 'youngpros_setup' );
