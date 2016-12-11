@@ -21,12 +21,14 @@ Template to post Episode Gallery Images
 	?>
 	
 	<li class="element">
-        	<a class="" rel="" 
+            <div class="gallery-image" style="background-image: url('<?php $thumnail_size= "album-grid"; echo the_post_thumbnail_url( $size ); ?>');">
+                <a class="" rel="" 
         	href="
         		<?php the_field('episode_link_url') ?>
         	">
-				<?php the_post_thumbnail('album-grid'); //display custom thumbnail size ?>
-			</a>
+                    <div class="watch-now"><h3>Watch Now</h3></div>
+                </a>
+            </div>
             <div class="gallery-meta">
                 <a class="" rel="" href="<?php the_field('episode_link_url') ?>  ">
                     <h3><?php echo get_the_title(); ?></h3>

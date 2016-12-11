@@ -3179,10 +3179,7 @@ button:hover {
       font-weight: normal; }
 
 ul.photogal li a {
-  width: 100.1%;
-  display: block;
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
 
 /* line 49, ../sass/style.scss */
 ul.photogal li a img {
@@ -3195,6 +3192,36 @@ ul.photogal li a img {
 
 ul.photogal li a img:hover {
   transform: scale(1.09); }
+
+.gallery-image {
+  background-size: cover;
+  background-position: center;
+  height: 15.625rem; }
+  .gallery-image a {
+    height: 100%;
+    position: relative;
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .gallery-image .watch-now {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s; }
+    .gallery-image .watch-now h3 {
+      color: #fff;
+      padding: .5rem; }
+
+.gallery-image a:hover > .watch-now {
+  opacity: 1; }
 
 @media (min-width: 550px) {
   .subscription-bar p {
