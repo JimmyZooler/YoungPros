@@ -1,0 +1,11 @@
+﻿Styled episode titles and removed unused code
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch development
+# Changes to be committed:
+#	modified:   dist/css/style.css
+#	modified:   dist/css/style.min.css
+#	modified:   sass/style.scss
+#
+
