@@ -151,12 +151,12 @@ p {
     text-transform: uppercase;
     text-align: center;
     h1 {
-        font-size: 48 / 16 + rem;
+        font-size: 30 / 16 + rem;
         margin-top: 0;
         color: $dark-blue;
     }
     h2 {
-        font-size: 30 / 16 + rem;
+        font-size: 20 / 16 + rem;
         margin-bottom: 0;
         margin-top: 60 / 16 + rem;
     }
@@ -168,7 +168,7 @@ p {
         margin: 0 auto;
     }
     h3 {
-        font-size: 30 / 16 + rem;
+        font-size: 20 / 16 + rem;
         font-style: italic;
         max-width: 700px;
         color: $dark-blue;
@@ -233,7 +233,7 @@ button:hover {
     text-align: center;
     padding-top: 50 /16 + rem;
     div h2 {
-        font-size: 48 / 16 + rem;
+        font-size: 30 / 16 + rem;
         max-width: 360px;
         border-bottom: 1px solid #ebebeb;
         text-transform: uppercase;
@@ -243,14 +243,15 @@ button:hover {
         margin-bottom: 55px;
     }    
 }
-.photogal > :nth-child(3n+3) { margin-right: 0; }
 .photogal {
     margin: 40px 0 40px;
-    padding: 0;}
+    padding: 0 20px;}
 .photogal li {
+    width: 100%;
+    float: left;
     list-style: none; 
     list-style-type: none; 
-    margin-right: 3.5%;
+    margin-right: 0;
     margin-bottom: 30px;
     text-align: right;
     .gallery-meta {
@@ -262,21 +263,20 @@ button:hover {
     }
 }
 
-/* line 42, ../sass/style.scss */
-ul.photogal li {
-  width: 31%;
-  float: left; }
-  /* line 45, ../sass/style.scss */
   ul.photogal li a {
     width: 100.1%;
-    display: block; }
+    display: block;
+    overflow: hidden;
+    position: relative;}
     /* line 49, ../sass/style.scss */
     ul.photogal li a img {
       display: block;
       max-width: 100.1%;
       height: auto;
       width: auto\9;
+      transition: all 0.3s;
       /* ie8 */ }
+    ul.photogal li a img:hover { transform: scale(1.09); }
 
 @media (min-width: 550px) { 
     
@@ -288,10 +288,56 @@ ul.photogal li {
             font-size: 100%;
         }
     }
-    
+}
+
+@media (min-width: 500px) and (max-width: 690px){ 
     #home-page-intro { 
+        h1 {
+            font-size: 36 / 16 + rem;
+        }
+        h2 {
+        font-size: 24 / 16 + rem;
+        }
         h3 {
-            font-size: 36 / 16 + rem; 
+            font-size: 24 / 16 + rem; 
         }
     }
+    #episodes {
+        div h2 {
+            font-size: 36 / 16 + rem;
+        }
+    }
+    .photogal li {
+        width: 48.2%;
+        margin-right: 3.5%;
+    }
+    .photogal > :nth-child(2n+2) { margin-right: 0; }
+    .photogal {
+        padding: 0; }
+}
+
+@media (min-width: 690px) {
+    #home-page-intro { 
+        h1 {
+            font-size: 48 / 16 + rem;
+        }
+        h2 {
+        font-size: 30 / 16 + rem;
+        }
+        h3 {
+            font-size: 30 / 16 + rem; 
+        }
+    }
+    #episodes {
+        div h2 {
+            font-size: 48 / 16 + rem;
+        }
+    }
+    .photogal li {
+        width: 31%;
+        margin-right: 3.5%;
+    }
+    .photogal > :nth-child(3n+3) { margin-right: 0; }
+    .photogal {
+        padding: 0; }
 }

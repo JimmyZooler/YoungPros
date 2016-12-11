@@ -3084,11 +3084,11 @@ p {
   text-transform: uppercase;
   text-align: center; }
   #home-page-intro h1 {
-    font-size: 3rem;
+    font-size: 1.875rem;
     margin-top: 0;
     color: #081e39; }
   #home-page-intro h2 {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 3.75rem; }
   #home-page-intro #video-container {
@@ -3098,7 +3098,7 @@ p {
     background-color: #373737;
     margin: 0 auto; }
   #home-page-intro h3 {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     font-style: italic;
     max-width: 700px;
     color: #081e39;
@@ -3151,7 +3151,7 @@ button:hover {
   text-align: center;
   padding-top: 3.125rem; }
   #episodes div h2 {
-    font-size: 3rem;
+    font-size: 1.875rem;
     max-width: 360px;
     border-bottom: 1px solid #ebebeb;
     text-transform: uppercase;
@@ -3160,17 +3160,16 @@ button:hover {
     padding-bottom: 10px;
     margin-bottom: 55px; }
 
-.photogal > :nth-child(3n+3) {
-  margin-right: 0; }
-
 .photogal {
   margin: 40px 0 40px;
-  padding: 0; }
+  padding: 0 20px; }
 
 .photogal li {
+  width: 100%;
+  float: left;
   list-style: none;
   list-style-type: none;
-  margin-right: 3.5%;
+  margin-right: 0;
   margin-bottom: 30px;
   text-align: right; }
   .photogal li .gallery-meta {
@@ -3179,15 +3178,11 @@ button:hover {
       margin-top: 5px;
       font-weight: normal; }
 
-/* line 42, ../sass/style.scss */
-ul.photogal li {
-  width: 31%;
-  float: left; }
-
-/* line 45, ../sass/style.scss */
 ul.photogal li a {
   width: 100.1%;
-  display: block; }
+  display: block;
+  overflow: hidden;
+  position: relative; }
 
 /* line 49, ../sass/style.scss */
 ul.photogal li a img {
@@ -3195,12 +3190,48 @@ ul.photogal li a img {
   max-width: 100.1%;
   height: auto;
   width: auto\9;
+  transition: all 0.3s;
   /* ie8 */ }
+
+ul.photogal li a img:hover {
+  transform: scale(1.09); }
 
 @media (min-width: 550px) {
   .subscription-bar p {
     font-size: 1.75rem; }
   .subscription-bar button {
-    font-size: 100%; }
+    font-size: 100%; } }
+
+@media (min-width: 500px) and (max-width: 690px) {
+  #home-page-intro h1 {
+    font-size: 2.25rem; }
+  #home-page-intro h2 {
+    font-size: 1.5rem; }
   #home-page-intro h3 {
-    font-size: 2.25rem; } }
+    font-size: 1.5rem; }
+  #episodes div h2 {
+    font-size: 2.25rem; }
+  .photogal li {
+    width: 48.2%;
+    margin-right: 3.5%; }
+  .photogal > :nth-child(2n+2) {
+    margin-right: 0; }
+  .photogal {
+    padding: 0; } }
+
+@media (min-width: 690px) {
+  #home-page-intro h1 {
+    font-size: 3rem; }
+  #home-page-intro h2 {
+    font-size: 1.875rem; }
+  #home-page-intro h3 {
+    font-size: 1.875rem; }
+  #episodes div h2 {
+    font-size: 3rem; }
+  .photogal li {
+    width: 31%;
+    margin-right: 3.5%; }
+  .photogal > :nth-child(3n+3) {
+    margin-right: 0; }
+  .photogal {
+    padding: 0; } }
