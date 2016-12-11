@@ -263,18 +263,15 @@ button:hover {
     }
 }
 
-  ul.photogal li a {
-    overflow: hidden; }
-    /* line 49, ../sass/style.scss */
-    ul.photogal li a img {
-      display: block;
-      max-width: 100.1%;
-      height: auto;
-      width: auto\9;
-      transition: all 0.3s;
-      /* ie8 */ }
-    ul.photogal li a img:hover { transform: scale(1.09); }
-    
+    ul.photogal li .gallery-meta a {
+        text-decoration: none;
+        h3 {
+            font-weight: normal;
+        }
+    }
+    .gallery-meta h3:hover {
+            color: $dark-blue;
+        }
     .gallery-image {
         background-size: cover;
         background-position: center;
