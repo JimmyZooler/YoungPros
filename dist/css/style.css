@@ -3102,7 +3102,7 @@ p {
     font-style: italic;
     max-width: 700px;
     color: #081e39;
-    margin: 60px auto; }
+    margin: 60px auto 40px; }
 
 .site-footer {
   text-align: center; }
@@ -3133,8 +3133,10 @@ p {
   .subscription-bar .row {
     position: relative;
     z-index: 4; }
-  .subscription-bar button {
-    font-size: 80%; }
+
+.subscription-button {
+  font-size: 80%;
+  margin-bottom: 80px; }
 
 button {
   font-family: Raleway, sans-serif !important;
@@ -3216,11 +3218,38 @@ ul.photogal li .gallery-meta a {
 .gallery-image a:hover > .watch-now {
   opacity: 1; }
 
+.social-icons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: inline-block; }
+  .social-icons li {
+    list-style-type: none;
+    display: inline;
+    float: left; }
+  .social-icons a {
+    color: #fff;
+    display: block;
+    padding: 8px;
+    margin: 0 7px; }
+    .social-icons a i {
+      transition: all 0.3s;
+      font-size: 2.5rem; }
+
+.social-icons a i:hover {
+  font-size: 2.875rem; }
+
 @media (min-width: 550px) {
   .subscription-bar p {
     font-size: 1.75rem; }
-  .subscription-bar button {
-    font-size: 100%; } }
+  .subscription-button {
+    font-size: 100%; }
+  .social-icons a {
+    margin: 0 10px; }
+    .social-icons a i {
+      font-size: 3.4375rem; }
+  .social-icons a i:hover {
+    font-size: 3.625rem; } }
 
 @media (min-width: 500px) and (max-width: 690px) {
   #home-page-intro h1 {

@@ -110,6 +110,8 @@ function youngpros_scripts() {
 	wp_enqueue_script( 'youngpros-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
         wp_enqueue_style('youngpros-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700i|Raleway:400i,700');
+        
+        wp_enqueue_script('youngpros-font-awesome', 'https://use.fontawesome.com/9e4c5fbff6.js');
     
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
