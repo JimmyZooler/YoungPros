@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	<header class="entry-header" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );

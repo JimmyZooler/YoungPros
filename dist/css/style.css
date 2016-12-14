@@ -3078,7 +3078,7 @@ p {
 .container {
   max-width: 75rem;
   margin: 0 auto;
-  overflow: auto; }
+  /*overflow: auto;*/ }
 
 #home-page-intro {
   text-transform: uppercase;
@@ -3252,6 +3252,63 @@ ul.photogal li .gallery-meta a {
     text-decoration: none;
     -webkit-text-decoration-color: none;
             text-decoration-color: none; }
+
+#blog {
+  overflow: auto;
+  padding: 15px 0 30px; }
+  #blog article {
+    display: inline-block;
+    margin: 0;
+    transition: all 0.5s; }
+    #blog article .blog-container {
+      display: table;
+      height: 100%;
+      width: 100%;
+      position: relative; }
+    #blog article .post-link {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #blog article header {
+      color: #fff;
+      display: table-cell;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 0 10px 6px; }
+      #blog article header h2 {
+        font-size: 18px; }
+      #blog article header a {
+        text-decoration: none;
+        color: #fff; }
+  #blog .post:nth-child(2) {
+    display: inline-block;
+    float: left;
+    height: 415px;
+    width: 36.9375rem;
+    margin-right: 15px; }
+  #blog .post:nth-child(3), #blog .post:nth-child(4) {
+    width: 24.625rem;
+    height: 200px;
+    float: left;
+    margin-right: 0; }
+  #blog .post {
+    width: 20.20813rem;
+    height: 250px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 15px; }
+  #blog .post:nth-child(4n+3) {
+    margin-right: 0; }
+
+#blog article:hover {
+  box-shadow: 4px 8px 23px -2px rgba(0, 0, 0, 0.75); }
+
+.translate-y-ten {
+  transform: translateY(-10px); }
 
 @media (min-width: 550px) {
   .subscription-bar p {
