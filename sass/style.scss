@@ -375,9 +375,20 @@ button:hover {
                 bottom: 0;
                 width: 100%;
                 background-color: rgba(0, 0, 0, 0.7);
-                padding: 0 10px 6px;
+                padding: 0 10px 10px;
+                .entry-meta {
+                    font-size: 14 / 16 +rem;
+                    .byline {
+                        display: inline;
+                    }
+                    img {
+                        width: 32px;
+                        border-radius: 100%;
+                    }
+                }
                 h2 {
-                        font-size: 18px;
+                    font-size: 18px;
+                    text-transform: uppercase;
                     }
                 a {
                     text-decoration: none;
@@ -415,7 +426,7 @@ button:hover {
         box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);
     }
     .translate-y-ten {
-        transform: translateY(-10px); 
+        transform: translateY(-6px); 
     }
     
 @media (min-width: 550px) { 

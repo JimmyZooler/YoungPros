@@ -3278,9 +3278,17 @@ ul.photogal li .gallery-meta a {
       bottom: 0;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.7);
-      padding: 0 10px 6px; }
+      padding: 0 10px 10px; }
+      #blog article header .entry-meta {
+        font-size: 0.875rem; }
+        #blog article header .entry-meta .byline {
+          display: inline; }
+        #blog article header .entry-meta img {
+          width: 32px;
+          border-radius: 100%; }
       #blog article header h2 {
-        font-size: 18px; }
+        font-size: 18px;
+        text-transform: uppercase; }
       #blog article header a {
         text-decoration: none;
         color: #fff; }
@@ -3308,7 +3316,7 @@ ul.photogal li .gallery-meta a {
   box-shadow: 4px 8px 23px -2px rgba(0, 0, 0, 0.75); }
 
 .translate-y-ten {
-  transform: translateY(-10px); }
+  transform: translateY(-6px); }
 
 @media (min-width: 550px) {
   .subscription-bar p {
