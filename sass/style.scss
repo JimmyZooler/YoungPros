@@ -331,6 +331,23 @@ button:hover {
     .social-icons a i:hover {
         font-size: 46 / 16 + rem;
     }
+    
+    .site-footer {
+        background-color: #333333;
+        color: #fff;
+        padding-top: 40 / 16 + rem;
+        h2 {
+            text-transform: uppercase;
+        }
+        .social-icons {
+            margin-bottom: 40 / 16 + rem;
+        }
+        a {
+            text-decoration: none;
+            text-decoration-color: none;
+        }
+    }
+    
 @media (min-width: 550px) { 
     
     .subscription-bar {

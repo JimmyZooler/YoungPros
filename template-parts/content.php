@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
