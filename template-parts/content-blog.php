@@ -28,7 +28,6 @@
                     endif; ?>
             </header><!-- .entry-header -->
         </a>
-        <img 
     </div>
 </article><!-- #post-## -->
 
