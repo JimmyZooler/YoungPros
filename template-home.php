@@ -28,5 +28,9 @@ Template Name: Home Page
         <?php get_template_part( 'template-parts/gallery', 'none' ); ?>
     </div>
 </section>
+<section>
+    <div class="row">
+        <?php  the_field('instagram_shortcode'); ?>
+</section>
 
 <?php get_footer(); ?>
