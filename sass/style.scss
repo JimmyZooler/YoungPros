@@ -314,12 +314,14 @@ button:hover {
         li {
         list-style-type: none;
         display: inline; 
-        float: left; }
+        float: left;
+        width: 70px;
+        height: 58px;
+        text-align: center;
+        }
         a {
             color: #fff;
             display: block;
-            padding: 8px;
-            margin: 0 7px;
             i {
                  transition: all 0.3s;
                  font-size: 40 / 16 + rem;
@@ -339,10 +341,13 @@ button:hover {
     .subscription-button {
             font-size: 100%;
     }
-    .social-icons a {
-        margin: 0 10px;
-        i {
-        font-size: 55 / 16 + rem; }
+    .social-icons li {
+        width: 81px;
+        a {
+        /*margin: 0 10px;*/
+            i {
+                font-size: 55 / 16 + rem; }
+        }
     }
     .social-icons a i:hover {
         font-size: 58 / 16 + rem;
