@@ -11,7 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 	<header class="entry-header" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
-		<?php
+            <div class="header-content">
+                <?php
+                
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
@@ -24,9 +26,11 @@
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
+            </div>
 	</header><!-- .entry-header -->
-        <div class="row">
+        <div class="blog-row">
             <div class="entry-content">
+                <?php youngpros_post_date(); ?>
                     <?php
                             the_content( sprintf(
                                     /* translators: %s: Name of current post. */
