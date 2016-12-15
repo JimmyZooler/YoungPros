@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
     <div class='blog-container'>
         <a class="post-link" href="<?php echo get_permalink(); ?>" >
+            <span class="category-box"><?php  $categories = get_the_category(); if ( ! empty( $categories ) ) { echo esc_html( $categories[0]->name ); }?></span>
             <header class="entry-header" >
                     <?php
                     if ( is_single() ) :

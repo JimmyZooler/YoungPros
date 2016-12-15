@@ -3106,6 +3106,9 @@ p {
 
 .site-footer {
   text-align: center; }
+  .site-footer .site-info {
+    margin-bottom: 10px;
+    font-size: 0.8rem; }
 
 .overlay-blue {
   position: absolute;
@@ -3259,7 +3262,22 @@ ul.photogal li .gallery-meta a {
   #blog article {
     display: inline-block;
     margin: 0;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    border: 5px solid white; }
+    #blog article .category-box {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ed7134;
+      padding: 6px 8px; }
     #blog article .blog-container {
       display: table;
       height: 100%;
@@ -3284,7 +3302,7 @@ ul.photogal li .gallery-meta a {
         #blog article header .entry-meta .byline {
           display: inline; }
         #blog article header .entry-meta img {
-          width: 32px;
+          width: 30px;
           border-radius: 100%; }
       #blog article header h2 {
         font-size: 18px;
@@ -3292,31 +3310,54 @@ ul.photogal li .gallery-meta a {
       #blog article header a {
         text-decoration: none;
         color: #fff; }
+
+#blog article:hover {
+  transform: translateY(-6px);
+  /*        -webkit-box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);
+        box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);*/ }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  #blog .post:nth-child(2) {
+    height: 400px;
+    width: 100%; }
+  #blog .post {
+    width: 50%;
+    height: 250px;
+    float: left;
+    border: 5px solid white; }
+  #blog .post:nth-child(3) {
+    width: 100%; }
+  #blog .post:nth-last-child(3n+1):first-child ~ .post:nth-child(n+2):nth-child(-n+3) {
+    width: 50%;
+    /* override default 50% width for 3nd and 4rd items */ }
+  /* mod query override, check for mod 3 remainder = 2 */
+  #blog .post:nth-last-child(3n+2):first-child ~ .post:nth-child(n+4):nth-child(-n+5) {
+    width: 50%;
+    /* override default 33% width for 4th and 5th items */ } }
+
+@media (min-width: 1000px) {
   #blog .post:nth-child(2) {
     display: inline-block;
     float: left;
-    height: 415px;
-    width: 36.9375rem;
-    margin-right: 15px; }
+    height: 400px;
+    width: 60%; }
   #blog .post:nth-child(3), #blog .post:nth-child(4) {
-    width: 24.625rem;
+    width: 40%;
     height: 200px;
-    float: left;
-    margin-right: 0; }
-  #blog .post {
-    width: 20.20813rem;
+    float: left; }
+  #blog article {
+    width: 33.333%;
     height: 250px;
     float: left;
-    margin-top: 15px;
-    margin-right: 15px; }
-  #blog .post:nth-child(4n+3) {
-    margin-right: 0; }
-
-#blog article:hover {
-  box-shadow: 4px 8px 23px -2px rgba(0, 0, 0, 0.75); }
-
-.translate-y-ten {
-  transform: translateY(-6px); }
+    border: 5px solid white; }
+  /*    #blog article:nth-last-child(3n+2):first-child ~ article:nth-child(n+5):nth-child(-n+6) {
+        width: 50%;  override default 50% width for 2nd and 3rd items 
+    }
+     mod query override, check for mod 3 remainder = 2  
+    #blog article:nth-last-child(3n+1):first-child ~ article:nth-child(n+6):nth-child(-n+7) {
+      width: 50%;  override default 33% width for 4th and 5th items 
+    }*/ }
 
 @media (min-width: 550px) {
   .subscription-bar p {
