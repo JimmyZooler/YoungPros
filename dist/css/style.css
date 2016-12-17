@@ -3102,7 +3102,7 @@ p {
     font-style: italic;
     max-width: 700px;
     color: #081e39;
-    margin: 60px auto 40px; }
+    margin: 70px auto 80px; }
 
 .site-footer {
   text-align: center; }
@@ -3139,7 +3139,7 @@ p {
 
 .subscription-button {
   font-size: 80%;
-  margin-bottom: 80px; }
+  /*margin-bottom: 80px;*/ }
 
 button {
   font-family: Raleway, sans-serif !important;
@@ -3320,7 +3320,11 @@ ul.photogal li .gallery-meta a {
 .blog-row {
   margin: 2rem auto;
   max-width: 50rem;
-  width: 100%; }
+  width: 100%;
+  padding: 0 20px 40px; }
+  .blog-row .entry-content {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #cacaca; }
 
 .post-date {
   text-decoration: none;
@@ -3334,50 +3338,68 @@ ul.photogal li .gallery-meta a {
   .post-date time {
     font-size: 160%; }
 
-.single-post article header {
+.single-post article header, .archive article header {
   height: 350px;
   text-align: center;
   display: table;
   position: relative;
   width: 100%;
   background-attachment: fixed; }
-  .single-post article header .header-content {
+  .single-post article header .header-content, .archive article header .header-content {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
-    .single-post article header .header-content .posted-on, .single-post article header .header-content .byline {
+    .single-post article header .header-content .category-box, .archive article header .header-content .category-box {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #ed7134;
+      padding: 6px 8px; }
+    .single-post article header .header-content .posted-on, .single-post article header .header-content .byline, .archive article header .header-content .posted-on, .archive article header .header-content .byline {
       display: none; }
-    .single-post article header .header-content img {
+    .single-post article header .header-content img, .archive article header .header-content img {
       position: absolute;
       bottom: -30px;
       left: calc(50vw - 30px);
       width: 60px;
       border-radius: 100%;
       border: 4px solid #fff; }
-    .single-post article header .header-content h1 {
+    .single-post article header .header-content h1, .archive article header .header-content h1 {
       font-size: 3rem;
       text-transform: uppercase;
       color: #fff; }
-    .single-post article header .header-content entry-meta {
+    .single-post article header .header-content entry-meta, .archive article header .header-content entry-meta {
       bottom: 0; }
 
-.single-post .comments-area {
+.single-post .comments-area, .archive .comments-area {
   max-width: 50rem;
   width: 100%;
   margin: 3rem auto; }
-  .single-post .comments-area .form-submit #submit {
+  .single-post .comments-area .form-submit #submit, .archive .comments-area .form-submit #submit {
     background-color: #b22222;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.5;
     padding: 1rem 2rem 1.0625rem 2rem;
     border: none; }
-  .single-post .comments-area .form-submit #submit:hover {
+  .single-post .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover {
     background-color: #c84646; }
 
+.archive h1 {
+  text-align: center;
+  margin: 3rem 0; }
+
+.archive article header h2 {
+  font-size: 3rem;
+  text-transform: uppercase; }
+  .archive article header h2 a {
+    color: #fff;
+    text-decoration: none; }
+
 .nav-previous a, .nav-next a {
-  padding: 15px 10px;
+  padding: 15px 18px;
   text-decoration: none;
   background-color: #373737;
   display: inline-block;
@@ -3391,12 +3413,12 @@ ul.photogal li .gallery-meta a {
 
 .nav-previous a:before {
   content: "\f060";
-  margin-right: 20px;
+  margin-right: 10px;
   font-family: "FontAwesome"; }
 
 .nav-next a:after {
   content: "\f061";
-  margin-left: 20px;
+  margin-left: 10px;
   font-family: "FontAwesome"; }
 
 .cat-links {
@@ -3404,12 +3426,16 @@ ul.photogal li .gallery-meta a {
   font-style: italic;
   font-weight: bold; }
   .cat-links a {
-    padding: 8px 6px;
+    padding: 12px 15px;
     text-transform: uppercase;
     background-color: #ed7134;
     text-decoration: none;
     font-style: normal;
     color: #fff; }
+
+.comments-area div h3 {
+  text-align: center;
+  text-transform: uppercase; }
 
 @media (min-width: 600px) and (max-width: 1000px) {
   #blog .post:nth-child(2) {

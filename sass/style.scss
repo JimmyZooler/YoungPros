@@ -172,7 +172,7 @@ p {
         font-style: italic;
         max-width: 700px;
         color: $dark-blue;
-        margin: 60px auto 40px;
+        margin: 70px auto 80px;
     }
 }
 
@@ -217,7 +217,7 @@ p {
 
 .subscription-button {
     font-size: 80%;
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 }
 button {
     font-family: Raleway, sans-serif !important;
@@ -429,6 +429,11 @@ button:hover {
         margin: 2rem auto;
         max-width: 50rem;
         width: 100%;
+        padding: 0 20px 40px;
+        .entry-content {
+            margin-bottom: 40px;
+            border-bottom: 1px solid $medium-gray;
+        }
     }
     .post-date {
         text-decoration: none;
@@ -443,7 +448,7 @@ button:hover {
             font-size: 160%;
         }
     }
-    .single-post {
+    .single-post, .archive {
         article {
             header {
                 height: 350px;
@@ -457,6 +462,14 @@ button:hover {
                     vertical-align: middle;
                     width: 100%;
                     background-color: rgba(0, 0, 0, 0.3);
+                    .category-box {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background-color: $orange;
+                        padding:6px 8px;
+                    }
                     .posted-on, .byline {
                         display: none;
                     }
@@ -499,8 +512,28 @@ button:hover {
         }
     }
     
+    .archive {
+        h1 {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        article {
+            header {
+                h2 {
+                   font-size: 48 / 16 +rem;
+                    text-transform: uppercase;
+                    
+                    a {
+                        color: #fff; 
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    
     .nav-previous a , .nav-next a {
-        padding: 15px 10px;
+        padding: 15px 18px;
         text-decoration: none;
         background-color: #373737;
         display: inline-block;
@@ -514,12 +547,12 @@ button:hover {
     }
     .nav-previous a:before {
         content: "\f060";
-        margin-right: 20px;
+        margin-right: 10px;
         font-family: "FontAwesome";
     }
     .nav-next a:after {
         content: "\f061";
-        margin-left: 20px;
+        margin-left: 10px;
         font-family: "FontAwesome";
     }
     .cat-links {
@@ -527,12 +560,20 @@ button:hover {
         font-style: italic;
         font-weight: bold;
         a {
-            padding: 8px 6px;
+            padding: 12px 15px;
             text-transform: uppercase;
             background-color: $orange;
             text-decoration: none;
             font-style: normal;
             color: #fff;
+        }
+    }
+    
+    .comments-area {
+        
+        div h3 {
+            text-align: center;
+            text-transform: uppercase;
         }
     }
 @media (min-width: 600px) and (max-width: 1000px) { 
