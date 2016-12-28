@@ -24,15 +24,15 @@ Template to post Episode Gallery Images
             <div class="gallery-image" style="background-image: url('<?php $thumnail_size= "album-grid"; echo the_post_thumbnail_url( $size ); ?>');">
                 <a class="" rel="" 
         	href="
-        		<?php the_field('episode_link_url') ?>
+        		<?php the_permalink(); ?> 
         	">
-                    <div class="watch-now"><h3>Watch Now</h3></div>
+                    <div class="watch-now">
+                        <h3>Episode <?php the_field('episode_number') ?></h3>
+                        <p><?php echo get_the_title(); ?></p>
+                    </div>
                 </a>
             </div>
-            <div class="gallery-meta">
-                <a class="" rel="" href="<?php the_field('episode_link_url') ?>  ">
-                    <h3><?php echo get_the_title(); ?></h3>
-                </a>
+            <div class="gallery-meta" style="display: none;">
                 <p>Download or Listen on iTunes</p>
             </div>
     </li><!--end li-->

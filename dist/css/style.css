@@ -3211,15 +3211,16 @@ ul.photogal li .gallery-meta a {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.45);
     transition: all 0.3s; }
+    .gallery-image .watch-now p {
+      color: #fff; }
     .gallery-image .watch-now h3 {
       color: #fff;
-      padding: .5rem; }
+      padding: 0 .5rem; }
 
 .gallery-image a:hover > .watch-now {
-  opacity: 1; }
+  background-color: rgba(0, 0, 0, 0.65); }
 
 .social-icons {
   margin-left: 0;
