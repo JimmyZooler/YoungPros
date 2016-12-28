@@ -108,10 +108,14 @@ function youngpros_scripts() {
 	wp_enqueue_script( 'youngpros-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'youngpros-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-        
-        wp_enqueue_script( 'youngpros-little', get_template_directory_uri() . '/js/little.js', array(), '20151215', true );
 
         wp_enqueue_style('youngpros-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700i|Raleway:400i,700');
+        
+        wp_enqueue_style('youngpros-magnific-popup-css', get_template_directory_uri() . '/bower_components/magnific-popup/dist/magnific-popup.css');
+        
+        wp_enqueue_script('youngpros-magnific-popup-js', get_template_directory_uri() . '/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js', array(), '20151215', true );
+        
+        wp_enqueue_script( 'youngpros-little-magnific', get_template_directory_uri() . '/js/little-magnific.js', array(), '20151215', true );
         
         wp_enqueue_script('youngpros-font-awesome', 'https://use.fontawesome.com/9e4c5fbff6.js');
     
