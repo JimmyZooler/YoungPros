@@ -10,7 +10,7 @@
 ?>
 
 <div class="row">
-    <div class="column-left">
+    <div class="column medium-10">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
             <header class="entry-header" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
                 <div class="header-content">
@@ -54,7 +54,7 @@
             </div>
         </article><!-- #post-## -->
     </div>
-    <div class="sidebar-right">
+    <div class="column medium-2">
         
     </div>
 </div>
