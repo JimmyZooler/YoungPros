@@ -3152,6 +3152,19 @@ button {
 button:hover {
   background-color: #c84646 !important; }
 
+#episode-page-header {
+  text-align: center;
+  padding: 50px 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  #episode-page-header h2 {
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 4; }
+
 #episodes {
   text-align: center;
   padding-top: 3.125rem; }

@@ -233,6 +233,20 @@ button:hover {
 
 // Episode Gallery Styles
 
+#episode-page-header {
+    text-align: center;
+    padding: 50px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    h2 {
+        color: #fff;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 4;
+    }
+}
 #episodes {
     text-align: center;
     padding-top: 50 /16 + rem;
