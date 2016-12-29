@@ -154,6 +154,9 @@ p {
 #home-page-intro {
     text-transform: uppercase;
     text-align: center;
+    background-size: cover;
+    background-repeat: none;
+    height: 600px;
     h1 {
         font-size: 30 / 16 + rem;
         margin-top: 0;
@@ -164,13 +167,7 @@ p {
         margin-bottom: 0;
         margin-top: 60 / 16 + rem;
     }
-    #video-container {
-        height: 400px;
-        width: 100%;
-        border: 4px solid #ddd;
-        background-color: #373737;
-        margin: 0 auto;
-    }
+    
     h3 {
         font-size: 20 / 16 + rem;
         font-style: italic;
