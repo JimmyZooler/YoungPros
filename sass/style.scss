@@ -122,6 +122,12 @@ p {
     font-family: Lato, Helvetica, sans-serif;
 }
 
+.main-navigation {
+    ul {
+        display:block !important;
+    }
+}
+
 .top-bar {
     line-height: 80/16 + rem;
     height: 80/16 + rem;
@@ -133,6 +139,45 @@ p {
     a:hover {
         background-color: #222;
     }
+    .logo-section {
+        display: none;
+    }
+    .social-menu {
+        margin-left: 10px;
+        display: none;
+        .social-menu-icon {
+            text-align: center;
+            a {
+                padding: 0 0.5rem!important;
+            }
+            i {
+            font-size: 16px;
+            color: #333;
+            height: 30px;
+            width: 30px;
+            border-radius: 100px;
+            background-color: #fff;
+            line-height: 30px;
+            }
+        }
+    }
+}
+
+.social-menu-icon a:hover {
+    background: none!important;
+}
+
+.social-menu-icon a  .fa-facebook:hover {
+    color: #fff;
+    background-color: #3b5998 !important;
+}
+.social-menu-icon a  .fa-instagram:hover {
+    color: #fff;
+    background-color: #125688 !important;
+}
+.social-menu-icon a  .fa-youtube:hover {
+    color: #fff;
+    background-color: #e52d27 !important;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -143,6 +188,7 @@ p {
     /*font-weight: bold;*/
     text-transform: uppercase;
     font-family: Raleway, Helvetica, Roboto, Arial, sans-serif;
+    padding: 0 0.9375rem!important;
 }
 
 .container {
@@ -718,6 +764,9 @@ button:hover:not(.mfp-close), .button:hover {
 }
 
 @media (min-width: 550px) { 
+    .logo-section {
+        display: block!important;
+    }
     
     .subscription-bar {
         p {
@@ -807,5 +856,8 @@ button:hover:not(.mfp-close), .button:hover {
                 font-size: 16px!important;
             }
         }
+    }
+    .social-menu {
+        display: block!important;
     }
 }

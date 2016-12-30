@@ -25,20 +25,26 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'youngpros' ); ?></button>
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'youngpros' ); ?></button>-->
                         <div class="top-bar">
                             <div class="container">
-                                <div class="top-bar-section">
-                                    <div class="right">
-                                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                                    </div>  
-                                </div>
-                                <div class="top-bar-section">
+                                <div class="top-bar-section logo-section">
                                     <div class="left">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                                             <img src="<?php echo get_template_directory_uri(); ?>/images/young-pros-show-logo.png"/>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="top-bar-section">
+                                    <div class="social-menu right">
+                                        <ul class="social-menu-icons">
+                                            <li class="social-menu-icon"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li class="social-menu-icon"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li class="social-menu-icon"><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li></ul>
+                                    </div>
+                                    <div class="right">
+                                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                                    </div>  
                                 </div>
                             </div>
                         </div>
