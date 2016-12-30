@@ -3280,8 +3280,9 @@ ul.photogal li .gallery-meta a {
     list-style-type: none;
     display: inline;
     float: left;
-    width: 70px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center; }
   .social-icons a {
     color: #fff;

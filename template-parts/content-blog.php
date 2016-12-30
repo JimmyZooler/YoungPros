@@ -34,7 +34,7 @@
                     <div class='post-excerpt'>
                         <?php  the_excerpt(); ?>
                     </div>
-                    <a class="read-more" href='<?php    get_permalink(); ?>'><p>View Post</p></a>
+                    <a class="read-more" href='<?php  echo get_permalink(); ?>'><p>View Post</p></a>
         </div>
     </div>
 </article><!-- #post-## -->
