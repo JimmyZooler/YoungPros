@@ -21,7 +21,7 @@ Template to post Episode Gallery Images
 	?>
 	
 	<li class="element">
-            <div class="gallery-image" style="background-image: url('<?php $thumnail_size= "album-grid"; echo the_post_thumbnail_url( $size ); ?>');">
+            <div class="gallery-image" style="background-image: url('<?php $size= "album-grid"; echo the_post_thumbnail_url( $size ); ?>');">
                 <a class="" rel="" 
         	href="
         		<?php the_permalink(); ?> 

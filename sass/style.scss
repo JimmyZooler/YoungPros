@@ -139,7 +139,7 @@ p {
     line-height: 80/16 + rem; }
 
 .top-bar-section ul li > a { 
-    font-size: 20 / 16 + rem;
+    font-size: 1rem;
     /*font-weight: bold;*/
     text-transform: uppercase;
     font-family: Raleway, Helvetica, Roboto, Arial, sans-serif;
@@ -369,79 +369,142 @@ button:hover:not(.mfp-close), .button:hover {
         }
     }
     
+    .page-header {
+            height: 250px;
+            color: #333;
+            margin-bottom: 2rem;
+            padding-left: 3rem;
+            padding-top: 100px;
+            h1 {
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-size: 54px;
+            }
+    }
+    
     #blog {
         overflow: auto;
-        padding: 15px 0 30px;
+        padding: 0 0 30px;
         article {
-            display: inline-block;
-            margin: 0;
             transition: all 0.5s;
-            box-sizing: border-box;
             width: 100%;
-            height: 250px;
-            border: 5px solid white;
+            .post-wrap {
+                margin: 0 auto;
+                max-width: 62.5rem;
+                width: 100%;
+                background-color: $dark-blue;
+                overflow: auto;
+                position: relative;
+                .post-link {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                .title-column {
+                    float:left;
+                    color: #fff;
+                    width: 100%;
+                    max-width: 600px;
+                    height: 100%;
+                    padding: 2rem;
+                    .read-more {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-left:10px;
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                            display: inline-block;
+                            transition: all 0.2s;
+                        }
+                    }
+                    .read-more:hover {
+                        color: $red;
+                    }
+                    
+                    .read-more:after {
+                        content: "\f061";
+                        margin-left: 10px;
+                        font-family: "FontAwesome";
+                        font-size: 15px;
+                        margin-top:-4px;
+                        transition: all 0.2s;
+
+                    }
+                    .post-excerpt {
+                        display: none;
+                        p {
+                            font-size: 14/16 + rem;
+                        }
+                    }
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 0.8rem;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        transition: all 0.2s;
+                        }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    .entry-meta {
+                        font-size: 14 / 16 +rem;
+                        margin-bottom: 1.5rem;
+                        margin-left: 10px;
+                        a {
+                            color: $red;
+                        }
+                        .byline {
+                            display: inline;
+                        }
+                        img {
+                            width: 20px;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+            .thumbnail {
+                display: inline;
+                float: left;
+                height: 100%;
+            }
+            
             .category-box {
                 text-decoration: none;
                 color: #fff;
                 font-size: 12px;
                 font-weight: bold;
                 text-transform: uppercase;
-                position: absolute;
-                top: 10px;
-                left: 10px;
                 background-color: $orange;
                 padding:6px 8px;
-            }
-            .blog-container {
-                display: table;
-                height: 100%;
-                width: 100%;
-                position: relative;
-            }
-            .post-link {
-                width: 100%;
-                height: 100%;
                 position: absolute;
-                left: 0;
-                top: 0;
+                left: 10px;
+                top: 10px;
             }
-            header {
-                color: #fff;
-                display: table-cell;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.7);
-                padding: 0 10px 10px;
-                .entry-meta {
-                    font-size: 14 / 16 +rem;
-                    .byline {
-                        display: inline;
-                    }
-                    img {
-                        width: 30px;
-                        border-radius: 100%;
-                    }
-                }
-                h2 {
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    }
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                }
+            .blog-thumbnail {
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    display: inline-block; 
+                    position: relative;
             }
+            
         }
-        
     }
+        
     #blog article:hover { 
-        transform: translateY(-6px);
+        transform: translateY(-3px);
 /*        -webkit-box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);
         box-shadow: 4px 8px 23px -2px rgba(0,0,0,0.75);*/
     }
-   
+   #blog article .title-column h2 a:hover {
+        color: $red;  
+    }
     .blog-row {
         margin: 2rem auto;
         max-width: 50rem;
@@ -645,45 +708,13 @@ button:hover:not(.mfp-close), .button:hover {
         }
     }
     
-@media (min-width: 600px) and (max-width: 1000px) { 
-    #blog {
-        .post:nth-child(2) {
-            height: 400px;
-            width: 100%;
-            }
-            .post {
-                width: 50%;
-                height: 250px;
-                float: left;
-                border: 5px solid white;
-            }
+@media (min-width: 920px) {     
+    .read-more {
+        display: none;
     }
-}
-    
-@media (min-width: 1000px) {     
-    #blog {
-        .post:nth-child(2) {
-            display: inline-block;
-            float: left;
-            height: 400px;
-            width: 60%;
-            }
-            .post:nth-child(3), .post:nth-child(4) {
-                width: 40%;
-                height: 200px;
-                float: left;
-            }
-            article {
-                width: 33.333%;
-                height: 250px;
-                float: left;
-                border: 5px solid white;
-            } 
+    .post-excerpt {
+        display: block!important;
     }
-/*  #blog article:nth-last-child(2n+1) ~ article {
-      width: 33.333%;
-      float: left;
-    }*/
 }
 
 @media (min-width: 550px) { 
@@ -737,7 +768,6 @@ button:hover:not(.mfp-close), .button:hover {
     .photogal {
         padding: 0; }
 }
-
 @media (min-width: 690px) {
     #home-page-intro { 
         h1 {
@@ -762,4 +792,20 @@ button:hover:not(.mfp-close), .button:hover {
     .photogal > :nth-child(3n+3) { margin-right: 0; }
     .photogal {
         padding: 0; }
+    .blog-thumbnail {
+        width: 300px!important;
+        height: 300px!important;
+        float: left;
+    }
+    .title-column {
+        width: calc(100% - 332px)!important;
+        h2 {
+            font-size: 30px!important;
+        }
+        .read-more {
+            p {
+                font-size: 16px!important;
+            }
+        }
+    }
 }
