@@ -1,6 +1,6 @@
 <!-- 
 
-Template to post Episode Gallery Images
+Template to post Recent Episodes
 
 -->
 <div class="content">
@@ -11,7 +11,7 @@ Template to post Episode Gallery Images
 		//setup new WP_Query
 		$wp_query = new WP_Query( 
 			array(
-				'posts_per_page'	=>	-1,
+				'posts_per_page'	=>	6,
 				'post_type'			=>	'gallery'
 			)
 		);

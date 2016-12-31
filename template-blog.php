@@ -48,5 +48,5 @@ Template Name: Blog Page
             </main><!-- #main -->
         </div>
     </div><!-- #primary -->
-
+<?php get_template_part( 'template-parts/subscription-bar', 'none' ); ?>
 <?php get_footer(); ?>

@@ -15,7 +15,6 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <div class="container">
             <main id="main" class="site-main" role="main">
                 <header class="page-header">
                         <h1><?php single_post_title(); ?></h1>
@@ -51,8 +50,7 @@ get_header(); ?>
                 
                 </div>
             </main><!-- #main -->
-        </div>
     </div><!-- #primary -->
-
+<?php get_template_part( 'template-parts/subscription-bar', 'none' ); ?>
 <?php
 get_footer();

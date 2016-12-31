@@ -18,7 +18,8 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'youngpros' ); ?></p>
+                                    <div class="row">
+                                        <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'youngpros' ); ?></p>
 
 					<?php
 						get_search_form();
@@ -29,20 +30,6 @@ get_header(); ?>
 						if ( youngpros_categorized_blog() ) :
 					?>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'youngpros' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
 
 					<?php
 						endif;
@@ -53,6 +40,7 @@ get_header(); ?>
 
 						the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
+                                    </div>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
