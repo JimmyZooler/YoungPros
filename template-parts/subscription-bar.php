@@ -28,7 +28,7 @@ Template for adding subscription bar
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aafca6008e577c3f07f4452bc_f88e40bfc2" tabindex="-1" value=""></div>
-                        <input type="submit" value="Become a Young Pro" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        <input type="submit" value="I Am Ready" name="subscribe" id="mc-embedded-subscribe" class="button">
                     </div>
                 </form>
             </div>

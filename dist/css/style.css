@@ -3132,21 +3132,29 @@ p {
   text-align: center;
   background-size: cover;
   background-repeat: none;
-  height: 600px; }
+  height: 550px;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed; }
   #home-page-intro h1 {
+    margin-top: 5rem;
     font-size: 1.875rem;
-    margin-top: 0;
-    color: #081e39; }
+    color: #333; }
   #home-page-intro h2 {
     font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 3.75rem; }
   #home-page-intro h3 {
-    font-size: 1.25rem;
-    font-style: italic;
-    max-width: 700px;
+    font-size: 1.625rem;
+    /*font-style: italic;*/
     color: #081e39;
-    margin: 70px auto 80px; }
+    top: 35%;
+    left: 10%;
+    position: absolute; }
+    #home-page-intro h3 span {
+      color: #b22222;
+      font-size: 3.8rem;
+      letter-spacing: 10px; }
 
 .site-footer {
   text-align: center; }
@@ -3180,6 +3188,18 @@ p {
   .subscription-section .row {
     position: relative;
     z-index: 4; }
+  .subscription-section a {
+    position: relative;
+    /*        #orange-arrow {
+        position: absolute;
+        top: -40px; 
+        right: -80px;
+        width: 60px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+        }*/ }
 
 .subscription-button, .button {
   font-size: 80%;
@@ -3650,7 +3670,7 @@ ul.photogal li .gallery-meta a {
   #home-page-intro h2 {
     font-size: 1.5rem; }
   #home-page-intro h3 {
-    font-size: 1.5rem; }
+    font-size: 1.8 rem; }
   #episodes div h2 {
     font-size: 2.25rem; }
   .photogal li {
@@ -3667,7 +3687,10 @@ ul.photogal li .gallery-meta a {
   #home-page-intro h2 {
     font-size: 1.875rem; }
   #home-page-intro h3 {
-    font-size: 1.875rem; }
+    font-size: 2.25rem;
+    left: 20%; }
+    #home-page-intro h3 span {
+      font-size: 5.125rem; }
   #episodes div h2 {
     font-size: 2.25rem; }
   .photogal li {

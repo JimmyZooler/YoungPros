@@ -210,11 +210,14 @@ p {
     text-align: center;
     background-size: cover;
     background-repeat: none;
-    height: 600px;
+    height: 550px;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
     h1 {
+        margin-top: 5rem;
         font-size: 30 / 16 + rem;
-        margin-top: 0;
-        color: $dark-blue;
+        color: #333;
     }
     h2 {
         font-size: 20 / 16 + rem;
@@ -223,11 +226,17 @@ p {
     }
     
     h3 {
-        font-size: 20 / 16 + rem;
-        font-style: italic;
-        max-width: 700px;
+        font-size: 26 / 16 + rem;
+        /*font-style: italic;*/
         color: $dark-blue;
-        margin: 70px auto 80px;
+        top: 35%;
+        left: 10%;
+        position: absolute;
+        span {
+            color: $red;
+            font-size: 3.8rem;
+            letter-spacing: 10px;
+        }
     }
 }
 
@@ -267,6 +276,19 @@ p {
     .row {
         position: relative;
         z-index: 4;
+    }
+    a {
+        position: relative;
+/*        #orange-arrow {
+        position: absolute;
+        top: -40px; 
+        right: -80px;
+        width: 60px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+        }*/
     }
 }
 
@@ -856,7 +878,7 @@ button:hover:not(.mfp-close), .button:hover {
         font-size: 24 / 16 + rem;
         }
         h3 {
-            font-size: 24 / 16 + rem; 
+            font-size: 1.8 rem; 
         }
     }
     #episodes {
@@ -881,7 +903,11 @@ button:hover:not(.mfp-close), .button:hover {
         font-size: 30 / 16 + rem;
         }
         h3 {
-            font-size: 30 / 16 + rem; 
+            font-size: 36 / 16 + rem; 
+            left: 20%;
+            span {
+                font-size: 82 / 16 + rem;
+            }
         }
     }
     #episodes {
