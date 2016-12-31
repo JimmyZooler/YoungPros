@@ -38,9 +38,9 @@
                                 <div class="top-bar-section">
                                     <div class="social-menu right">
                                         <ul class="social-menu-icons">
-                                            <li class="social-menu-icon"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            <li class="social-menu-icon"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            <li class="social-menu-icon"><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li></ul>
+                                            <li class="social-menu-icon"><a href="https://www.facebook.com/youngprosmvmt/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li class="social-menu-icon"><a href="https://www.instagram.com/youngprosmvmt/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li class="social-menu-icon"><a href="https://www.youtube.com/channel/UChwRZLioUjxODgHFOyP-7uA"><i class="fa fa-youtube" aria-hidden="true"></i></a></li></ul>
                                     </div>
                                     <div class="right">
                                         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
