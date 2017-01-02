@@ -14,7 +14,7 @@
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
             <header class="entry-header" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
                 <div class="header-content">
-                    <span class="category-box"><h3>Episode <?php the_field('episode_number') ?></h3></span>
+                    <span class="episode-box"><h3>Episode <?php the_field('episode_number') ?></h3></span>
                     <?php
 
                     if ( is_single() ) :

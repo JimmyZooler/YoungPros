@@ -104,6 +104,8 @@ add_action( 'widgets_init', 'youngpros_widgets_init' );
  */
 function youngpros_scripts() {
 	wp_enqueue_style( 'youngpros-style', get_stylesheet_uri() );
+        
+        wp_enqueue_script( 'youngpros-jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'youngpros-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

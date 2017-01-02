@@ -3526,7 +3526,16 @@ ul.photogal li .gallery-meta a {
   .single-post .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover, .single-gallery .comments-area .form-submit #submit:hover {
     background-color: #c84646; }
 
-.single-gallery article .header-content header h1 {
+.single-gallery article header .header-content .episode-box {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #ed7134; }
+
+.single-gallery article header .header-content h1 {
   font-size: 2rem !important; }
 
 .archive h1 {

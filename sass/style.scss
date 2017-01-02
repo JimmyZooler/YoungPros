@@ -688,8 +688,17 @@ button:hover:not(.mfp-close), .button:hover {
         }
     }
     .single-gallery article {
-        .header-content {
-            header {
+        header {
+            .header-content {
+                .episode-box {
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    color: $orange;
+                }
                 h1 {
                 font-size: 2rem !important;
                 }
