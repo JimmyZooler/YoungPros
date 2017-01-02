@@ -687,7 +687,15 @@ button:hover:not(.mfp-close), .button:hover {
             }
         }
     }
-    
+    .single-gallery article {
+        .header-content {
+            header {
+                h1 {
+                font-size: 2rem !important;
+                }
+            }
+        }
+    }
     .archive {
         h1 {
             text-align: center;

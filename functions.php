@@ -113,7 +113,7 @@ function youngpros_scripts() {
         
         wp_enqueue_style('youngpros-magnific-popup-css', get_template_directory_uri() . '/bower_components/magnific-popup/dist/magnific-popup.css');
         
-        wp_enqueue_script('youngpros-magnific-popup-js', get_template_directory_uri() . '/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js', array(), '20151215', true );
+        wp_enqueue_script('youngpros-magnific-popup-js', get_template_directory_uri() . '/bower_components/magnific-popup/dist/jquery.magnific-popup.js', array(), '20151215', true );
         
         wp_enqueue_script( 'youngpros-little-magnific', get_template_directory_uri() . '/js/little-magnific.js', array(), '20151215', true );
         
