@@ -3527,12 +3527,9 @@ ul.photogal li .gallery-meta a {
     background-color: #c84646; }
 
 .single-gallery article header .header-content .episode-box {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 10px;
-  top: 10px;
   color: #ed7134; }
 
 .single-gallery article header .header-content h1 {
