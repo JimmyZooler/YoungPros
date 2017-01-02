@@ -469,7 +469,7 @@ button:hover:not(.mfp-close), .button:hover {
             }
     }
     
-    #blog {
+    #blog, #episode-blog {
         overflow: auto;
         background: #222;
         article {
@@ -531,7 +531,7 @@ button:hover:not(.mfp-close), .button:hover {
                     h2 {
                         margin-top: 0;
                         margin-bottom: 0.8rem;
-                        font-size: 24px;
+                        font-size: 22px;
                         text-transform: capitalize;
                         transition: all 0.2s;
                         }
@@ -585,12 +585,21 @@ button:hover:not(.mfp-close), .button:hover {
         }
     }
         
-    #blog article:hover { 
+    #blog article:hover, #episode-blog article:hover { 
         transform: translateY(-3px);
         background: $dark-blue;
     }
-   #blog article .title-column h2 a:hover {
+   #blog article .title-column h2 a:hover, #episode-blog article .title-column h2 a:hover {
         color: $red;  
+    }
+    #episode-blog article {
+        .title-column {
+            span {
+                h3 {
+                    color: $orange;
+                }
+            }
+        }
     }
     .blog-row {
         margin: 2rem auto;
@@ -615,7 +624,7 @@ button:hover:not(.mfp-close), .button:hover {
             font-size: 160%;
         }
     }
-    .single-post, .archive {
+    .single-post, .archive, .single-gallery {
         article {
             header {
                 height: 350px;
@@ -843,7 +852,7 @@ button:hover:not(.mfp-close), .button:hover {
     }    
 
 @media (min-width: 920px) {     
-    .read-more {
+    #blog .read-more {
         display: none;
     }
     .post-excerpt {

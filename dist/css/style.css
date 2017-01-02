@@ -3354,81 +3354,81 @@ ul.photogal li .gallery-meta a {
     margin-bottom: 0;
     font-size: 54px; }
 
-#blog {
+#blog, #episode-blog {
   overflow: auto;
   background: #222; }
-  #blog article {
+  #blog article, #episode-blog article {
     transition: all 0.5s;
     width: 100%;
     background: #b22222;
     margin: 1rem 0; }
-    #blog article .post-wrap {
+    #blog article .post-wrap, #episode-blog article .post-wrap {
       margin: 0 auto;
       max-width: 62.5rem;
       width: 100%;
       background-color: #fff;
       overflow: auto;
       position: relative; }
-      #blog article .post-wrap .post-link {
+      #blog article .post-wrap .post-link, #episode-blog article .post-wrap .post-link {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-      #blog article .post-wrap .title-column {
+      #blog article .post-wrap .title-column, #episode-blog article .post-wrap .title-column {
         float: left;
         color: #333;
         width: 100%;
         max-width: 600px;
         height: 100%;
         padding: 2rem; }
-        #blog article .post-wrap .title-column .read-more {
+        #blog article .post-wrap .title-column .read-more, #episode-blog article .post-wrap .title-column .read-more {
           font-weight: bold;
           text-transform: uppercase;
           margin-left: 10px; }
-          #blog article .post-wrap .title-column .read-more p {
+          #blog article .post-wrap .title-column .read-more p, #episode-blog article .post-wrap .title-column .read-more p {
             margin: 0;
             font-size: 14px;
             display: inline-block;
             transition: all 0.2s; }
-        #blog article .post-wrap .title-column .read-more:hover {
+        #blog article .post-wrap .title-column .read-more:hover, #episode-blog article .post-wrap .title-column .read-more:hover {
           color: #b22222; }
-        #blog article .post-wrap .title-column .read-more:after {
+        #blog article .post-wrap .title-column .read-more:after, #episode-blog article .post-wrap .title-column .read-more:after {
           content: "\f061";
           margin-left: 10px;
           font-family: "FontAwesome";
           font-size: 15px;
           margin-top: -4px;
           transition: all 0.2s; }
-        #blog article .post-wrap .title-column .post-excerpt {
+        #blog article .post-wrap .title-column .post-excerpt, #episode-blog article .post-wrap .title-column .post-excerpt {
           display: none; }
-          #blog article .post-wrap .title-column .post-excerpt p {
+          #blog article .post-wrap .title-column .post-excerpt p, #episode-blog article .post-wrap .title-column .post-excerpt p {
             font-size: 0.875rem; }
-        #blog article .post-wrap .title-column h2 {
+        #blog article .post-wrap .title-column h2, #episode-blog article .post-wrap .title-column h2 {
           margin-top: 0;
           margin-bottom: 0.8rem;
-          font-size: 24px;
+          font-size: 22px;
           text-transform: capitalize;
           transition: all 0.2s; }
-        #blog article .post-wrap .title-column a {
+        #blog article .post-wrap .title-column a, #episode-blog article .post-wrap .title-column a {
           text-decoration: none;
           color: #333; }
-        #blog article .post-wrap .title-column .entry-meta {
+        #blog article .post-wrap .title-column .entry-meta, #episode-blog article .post-wrap .title-column .entry-meta {
           font-size: 0.875rem;
           margin-bottom: 1.5rem;
           margin-left: 10px; }
-          #blog article .post-wrap .title-column .entry-meta a {
+          #blog article .post-wrap .title-column .entry-meta a, #episode-blog article .post-wrap .title-column .entry-meta a {
             color: #b22222; }
-          #blog article .post-wrap .title-column .entry-meta .byline {
+          #blog article .post-wrap .title-column .entry-meta .byline, #episode-blog article .post-wrap .title-column .entry-meta .byline {
             display: inline; }
-          #blog article .post-wrap .title-column .entry-meta img {
+          #blog article .post-wrap .title-column .entry-meta img, #episode-blog article .post-wrap .title-column .entry-meta img {
             width: 20px;
             border-radius: 100%; }
-    #blog article .thumbnail {
+    #blog article .thumbnail, #episode-blog article .thumbnail {
       display: inline;
       float: left;
       height: 100%; }
-    #blog article .category-box {
+    #blog article .category-box, #episode-blog article .category-box {
       text-decoration: none;
       color: #fff;
       font-size: 12px;
@@ -3439,19 +3439,22 @@ ul.photogal li .gallery-meta a {
       position: absolute;
       left: 10px;
       top: 10px; }
-    #blog article .blog-thumbnail {
+    #blog article .blog-thumbnail, #episode-blog article .blog-thumbnail {
       width: 100%;
       height: 250px;
       overflow: hidden;
       display: inline-block;
       position: relative; }
 
-#blog article:hover {
+#blog article:hover, #episode-blog article:hover {
   transform: translateY(-3px);
   background: #081e39; }
 
-#blog article .title-column h2 a:hover {
+#blog article .title-column h2 a:hover, #episode-blog article .title-column h2 a:hover {
   color: #b22222; }
+
+#episode-blog article .title-column span h3 {
+  color: #ed7134; }
 
 .blog-row {
   margin: 2rem auto;
@@ -3474,53 +3477,53 @@ ul.photogal li .gallery-meta a {
   .post-date time {
     font-size: 160%; }
 
-.single-post article header, .archive article header {
+.single-post article header, .archive article header, .single-gallery article header {
   height: 350px;
   text-align: center;
   display: table;
   position: relative;
   width: 100%;
   background-attachment: fixed; }
-  .single-post article header .header-content, .archive article header .header-content {
+  .single-post article header .header-content, .archive article header .header-content, .single-gallery article header .header-content {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
-    .single-post article header .header-content .category-box, .archive article header .header-content .category-box {
+    .single-post article header .header-content .category-box, .archive article header .header-content .category-box, .single-gallery article header .header-content .category-box {
       color: #fff;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
       background-color: #ed7134;
       padding: 6px 8px; }
-    .single-post article header .header-content .posted-on, .single-post article header .header-content .byline, .archive article header .header-content .posted-on, .archive article header .header-content .byline {
+    .single-post article header .header-content .posted-on, .single-post article header .header-content .byline, .archive article header .header-content .posted-on, .archive article header .header-content .byline, .single-gallery article header .header-content .posted-on, .single-gallery article header .header-content .byline {
       display: none; }
-    .single-post article header .header-content img, .archive article header .header-content img {
+    .single-post article header .header-content img, .archive article header .header-content img, .single-gallery article header .header-content img {
       position: absolute;
       bottom: -30px;
       left: calc(50vw - 30px);
       width: 60px;
       border-radius: 100%;
       border: 4px solid #fff; }
-    .single-post article header .header-content h1, .archive article header .header-content h1 {
+    .single-post article header .header-content h1, .archive article header .header-content h1, .single-gallery article header .header-content h1 {
       font-size: 3rem;
       text-transform: uppercase;
       color: #fff; }
-    .single-post article header .header-content entry-meta, .archive article header .header-content entry-meta {
+    .single-post article header .header-content entry-meta, .archive article header .header-content entry-meta, .single-gallery article header .header-content entry-meta {
       bottom: 0; }
 
-.single-post .comments-area, .archive .comments-area {
+.single-post .comments-area, .archive .comments-area, .single-gallery .comments-area {
   max-width: 50rem;
   width: 100%;
   margin: 3rem auto; }
-  .single-post .comments-area .form-submit #submit, .archive .comments-area .form-submit #submit {
+  .single-post .comments-area .form-submit #submit, .archive .comments-area .form-submit #submit, .single-gallery .comments-area .form-submit #submit {
     background-color: #b22222;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.5;
     padding: 1rem 2rem 1.0625rem 2rem;
     border: none; }
-  .single-post .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover {
+  .single-post .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover, .single-gallery .comments-area .form-submit #submit:hover {
     background-color: #c84646; }
 
 .archive h1 {
@@ -3648,7 +3651,7 @@ ul.photogal li .gallery-meta a {
     display: block !important; } }
 
 @media (min-width: 920px) {
-  .read-more {
+  #blog .read-more {
     display: none; }
   .post-excerpt {
     display: block !important; } }
