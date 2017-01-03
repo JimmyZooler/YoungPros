@@ -3081,13 +3081,13 @@ p {
       .top-bar .social-menu .social-menu-icon a {
         padding: 0 0.5rem !important; }
       .top-bar .social-menu .social-menu-icon i {
-        font-size: 16px;
+        font-size: 24px;
         color: #333;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         border-radius: 100px;
         background-color: #fff;
-        line-height: 30px; }
+        line-height: 40px; }
 
 .social-menu-icon a:hover {
   background: none !important; }
@@ -3526,14 +3526,49 @@ ul.photogal li .gallery-meta a {
   .single-post .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover, .single-gallery .comments-area .form-submit #submit:hover {
     background-color: #c84646; }
 
-.single-gallery article header .header-content .episode-box {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ed7134; }
+.single-gallery .site-content, .page-id-70 .site-content {
+  padding-top: 3rem; }
+  .single-gallery .site-content article header .header-content .episode-box, .page-id-70 .site-content article header .header-content .episode-box {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ed7134; }
+  .single-gallery .site-content article header .header-content h1, .page-id-70 .site-content article header .header-content h1 {
+    font-size: 2rem !important; }
 
-.single-gallery article header .header-content h1 {
-  font-size: 2rem !important; }
+.widget-area .widget_recent_entries ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 5px; }
+  .widget-area .widget_recent_entries ul li {
+    margin-bottom: 5px; }
+    .widget-area .widget_recent_entries ul li a {
+      color: #b22222;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: capitalize; }
+
+.widget-area .textwidget {
+  background: #081e39; }
+  .widget-area .textwidget .form-inner #mc_embed_signup {
+    background: none !important; }
+    .widget-area .textwidget .form-inner #mc_embed_signup h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 5px; }
+    .widget-area .textwidget .form-inner #mc_embed_signup p {
+      font-size: 14px;
+      color: #fff;
+      font-style: italic;
+      text-align: center; }
+    .widget-area .textwidget .form-inner #mc_embed_signup .button {
+      width: 96% !important; }
+
+.widget-area .widget_recent_entries ul li a:hover {
+  color: #333; }
 
 .archive h1 {
   text-align: center;
