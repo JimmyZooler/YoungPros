@@ -624,7 +624,7 @@ button:hover:not(.mfp-close), .button:hover {
             font-size: 160%;
         }
     }
-    .single-post, .archive, .single-gallery {
+    .single-post, .archive {
         article {
             header {
                 height: 350px;
@@ -687,12 +687,20 @@ button:hover:not(.mfp-close), .button:hover {
             }
         }
     }
-    .single-gallery, .page-id-70 {
-        .site-content {
+    .single-gallery {
+        .site-content { 
             padding-top: 3rem;
             article {
                 header {
+                    height: 200px;
+                    text-align: center;
+                    display: table;
+                    position: relative;
+                    width: 100%;
                     .header-content {
+                        display: table-cell;
+                        vertical-align: middle;
+                        width: 100%;
                         .episode-box {
                             font-size: 16px;
                             font-weight: bold;
