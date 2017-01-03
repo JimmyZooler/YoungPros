@@ -3132,7 +3132,7 @@ p {
   text-align: center;
   background-size: cover;
   background-repeat: none;
-  height: 550px;
+  height: calc(100vh - 80px);
   background-position: right;
   position: relative;
   background-attachment: fixed; }
