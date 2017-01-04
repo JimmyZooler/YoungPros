@@ -9,7 +9,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div class="row">
+    <div class="column medium-9">
+        <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
                         <?php
                         while ( have_posts() ) : the_post();
@@ -27,6 +29,13 @@ get_header(); ?>
                         ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+    </div>
+    <div class="column medium-3">
+        <aside id="secondary" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </aside><!-- #secondary -->
+    </div>
+</div>
 
 <?php
 //get_sidebar();
