@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <header class="entry-header" >
         <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" />
-        <div class="overlay-blue"></div>
+        <div class="overlay"></div>
         <?php
         if ( 'post' === get_post_type() ) : ?>
             <div class="entry-meta">
