@@ -766,7 +766,6 @@ button:hover:not(.mfp-close), .button:hover {
             h2 {
                 text-transform: uppercase;
                 color: $orange;
-                font-size: 1.2em;
             }
             ul {
                 list-style: none;
@@ -779,7 +778,6 @@ button:hover:not(.mfp-close), .button:hover {
                         text-decoration: none;
                         font-weight: bold;
                         text-transform: capitalize;
-                        font-size: 12px;
                     }
                     
                 }
@@ -791,7 +789,7 @@ button:hover:not(.mfp-close), .button:hover {
                 #mc_embed_signup {
                     background: none!important;
                     h4 {
-                        font-size: 20px;
+                        font-size: 30px;
                         font-weight: bold;
                         color: #fff;
                         text-transform: uppercase;
@@ -799,7 +797,7 @@ button:hover:not(.mfp-close), .button:hover {
                         margin-bottom: 5px;
                     }
                     p {
-                        font-size: 14px;
+                        font-size: 20px;
                         color: #fff;
                         font-style: italic;
                         text-align: center;
@@ -978,7 +976,34 @@ button:hover:not(.mfp-close), .button:hover {
 
         }
     }    
-
+    @media (min-width: 640px) {
+        .widget-area {
+            .widget_recent_entries {
+                h2 {
+                    font-size: 1.2em;
+                }
+                ul {
+                    li {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .textwidget {
+                .form-inner {
+                    #mc_embed_signup {
+                        h4 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
 @media (min-width: 920px) {     
     #blog .read-more {
         display: none;
