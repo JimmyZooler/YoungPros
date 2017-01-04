@@ -749,11 +749,22 @@ button:hover:not(.mfp-close), .button:hover {
                             text-transform: uppercase;
                             color: $orange;
                         }
-                        h1 {
-                        font-size: 2rem !important;
-                        }
                     }
                 }
+            }
+        }
+    }
+   .single, .archive {
+        .site-content article header .header-content {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .single-gallery {
+        .site-content article header .header-content {
+            h1 {
+                font-size: 2rem;
             }
         }
     }
@@ -1055,6 +1066,13 @@ button:hover:not(.mfp-close), .button:hover {
     .photogal > :nth-child(2n+2) { margin-right: 0; }
     .photogal {
         padding: 0; }
+    .single, .archive {
+        .site-content article header .header-content {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 @media (min-width: 690px) {
     #home-page-intro { 
@@ -1102,5 +1120,12 @@ button:hover:not(.mfp-close), .button:hover {
     }
     .social-menu {
         display: block!important;
+    }
+    .single, .archive {
+        .site-content article header .header-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
     }
 }
