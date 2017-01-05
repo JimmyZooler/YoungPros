@@ -29,7 +29,6 @@
             </header><!-- .entry-header -->
             <div class="blog-row">
                 <div class="entry-content">
-                    <?php youngpros_post_date(); ?>
                         <?php
                                 the_content( sprintf(
                                         /* translators: %s: Name of current post. */
