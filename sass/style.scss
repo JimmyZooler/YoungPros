@@ -474,7 +474,7 @@ button:hover:not(.mfp-close), .button:hover {
             h1 {
                 text-transform: uppercase;
                 margin-bottom: 0;
-                font-size: 54px;
+                font-size: 48px;
             }
     }
     
@@ -633,93 +633,55 @@ button:hover:not(.mfp-close), .button:hover {
             font-size: 160%;
         }
     }
-   .single-gallery {
+    .single-post, .archive, .single-gallery  {
         article {
+            .avatar {
+                width: 60px;
+                border-radius: 100%;
+            }
+            .entry-meta {
+                margin-bottom: 2rem;
+                color: #858585;
+                a {
+                    text-decoration: none;
+                    color: #858585;
+                }
+                .author {
+                    .by {
+                        font-style: italic;
+                    }
+                    a {
+                       text-transform: uppercase;
+                    }
+                }
+                .posted-on {
+                    display: none;
+                }
+            }
             header {
-                height: 350px;
-                text-align: center;
-                display: table;
                 position: relative;
                 width: 100%;
-                background-attachment: fixed;
                 .header-content {
-                    display: table-cell;
-                    vertical-align: middle;
-                    width: 100%;
-                    background-color: rgba(0, 0, 0, 0.3);
-                    .category-box {
-                        color: #fff;
-                        font-size: 14px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        background-color: $orange;
-                        padding:6px 8px;
-                    }
-                    .posted-on, .byline {
-                        display: none;
-                    }
-                    img {
-                        position: absolute;
-                        bottom: -30px;
-                        left: calc(50vw - 30px);
-                        width: 60px;
-                        border-radius: 100%;
-                        border: 4px solid #fff;
-                    }
                     h1 {
-                        text-transform: uppercase;
-                        color: #fff;
+                        text-transform: capitalize;
                     }
-                    entry-meta {
-                        bottom: 0;
-                }
                 }
             }
         }
     }
-    .single-post, .archive {
-        article {
-            header {
-                text-align: center;
-                position: relative;
-                width: 100%;
-                .avatar {
-                        position: absolute;
-                        bottom: -30px;
-                        left: 45.5%;
-                        width: 60px;
-                        border-radius: 100%;
-                        border: 4px solid #fff;
-                        z-index: 4;
-                    }
-                .posted-on, .byline {
-                        display: none;
-                    }
-                .header-content {
-                    position: absolute;
-                    top: 35%;
-                    width: 100%;
-                    z-index: 4;
-                    .category-box {
-                        color: #fff;
-                        font-size: 14px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        background-color: $orange;
-                        padding:6px 8px;
-                    }
-                    h1 {
-                        text-transform: uppercase;
-                        color: #fff;
-                    }
-                    entry-meta {
-                        bottom: 0;
-                }
-                }
-            }
-        }
+    .single-post .site-content article header .header-content h1:after, 
+    .archive .site-content article header .header-content h1:after,
+    .single-gallery .site-content article header .header-content h1:after {
+        
+        content: " ";
+        height: 3px;
+        width: 60px;
+        background-color: #404040;
+        display: block;
+        margin: 15px 0;
     }
-    .single-gallery .comments-area, .single .comments-area, .archive .comments-area {
+    .single-gallery .comments-area, 
+    .single .comments-area, .archive .comments-area {
             max-width: 50rem;
             width: 100%;
             margin: 3rem auto;
@@ -754,17 +716,10 @@ button:hover:not(.mfp-close), .button:hover {
             }
         }
     }
-   .single, .archive {
+   .single, .archive, .single-gallery {
         .site-content article header .header-content {
             h1 {
-                font-size: 1.2rem;
-            }
-        }
-    }
-    .single-gallery {
-        .site-content article header .header-content {
-            h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -836,8 +791,7 @@ button:hover:not(.mfp-close), .button:hover {
                    font-size: 48 / 16 +rem;
                     text-transform: uppercase;
                     
-                    a {
-                        color: #fff; 
+                    a { 
                         text-decoration: none;
                     }
                 }
@@ -1069,7 +1023,7 @@ button:hover:not(.mfp-close), .button:hover {
     .single, .archive {
         .site-content article header .header-content {
             h1 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
@@ -1124,7 +1078,14 @@ button:hover:not(.mfp-close), .button:hover {
     .single, .archive {
         .site-content article header .header-content {
             h1 {
-                font-size: 2rem;
+                font-size: 3rem;
+            }
+        }
+    }
+    .single-gallery {
+        .site-content article header .header-content {
+            h1 {
+                font-size: 2.5rem;
             }
         }
     }

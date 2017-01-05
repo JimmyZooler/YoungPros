@@ -31,7 +31,7 @@ function youngpros_posted_on() {
 
 	$byline = sprintf(
 		esc_html_x( '%s', 'post author', 'youngpros' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author vcard"><span class="by">by&nbsp;&nbsp;</span><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
         
         echo get_avatar( get_the_author_meta('user_email'), $size = '60') . '<span class="byline"> ' . $byline . '</span><span class="posted-on">&nbsp;&nbsp;&bull;&nbsp;&nbsp;' . $posted_on . '</span>'; // WPCS: XSS OK.

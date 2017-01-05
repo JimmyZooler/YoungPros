@@ -3361,7 +3361,7 @@ ul.photogal li .gallery-meta a {
   .page-header h1 {
     text-transform: uppercase;
     margin-bottom: 0;
-    font-size: 54px; }
+    font-size: 48px; }
 
 #blog, #episode-blog {
   overflow: auto;
@@ -3486,84 +3486,54 @@ ul.photogal li .gallery-meta a {
   .post-date time {
     font-size: 160%; }
 
-.single-gallery article header {
-  height: 350px;
-  text-align: center;
-  display: table;
-  position: relative;
-  width: 100%;
-  background-attachment: fixed; }
-  .single-gallery article header .header-content {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); }
-    .single-gallery article header .header-content .category-box {
-      color: #fff;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      background-color: #ed7134;
-      padding: 6px 8px; }
-    .single-gallery article header .header-content .posted-on, .single-gallery article header .header-content .byline {
-      display: none; }
-    .single-gallery article header .header-content img {
-      position: absolute;
-      bottom: -30px;
-      left: calc(50vw - 30px);
-      width: 60px;
-      border-radius: 100%;
-      border: 4px solid #fff; }
-    .single-gallery article header .header-content h1 {
-      text-transform: uppercase;
-      color: #fff; }
-    .single-gallery article header .header-content entry-meta {
-      bottom: 0; }
+.single-post article .avatar, .archive article .avatar, .single-gallery article .avatar {
+  width: 60px;
+  border-radius: 100%; }
 
-.single-post article header, .archive article header {
-  text-align: center;
+.single-post article .entry-meta, .archive article .entry-meta, .single-gallery article .entry-meta {
+  margin-bottom: 2rem;
+  color: #858585; }
+  .single-post article .entry-meta a, .archive article .entry-meta a, .single-gallery article .entry-meta a {
+    text-decoration: none;
+    color: #858585; }
+  .single-post article .entry-meta .author .by, .archive article .entry-meta .author .by, .single-gallery article .entry-meta .author .by {
+    font-style: italic; }
+  .single-post article .entry-meta .author a, .archive article .entry-meta .author a, .single-gallery article .entry-meta .author a {
+    text-transform: uppercase; }
+  .single-post article .entry-meta .posted-on, .archive article .entry-meta .posted-on, .single-gallery article .entry-meta .posted-on {
+    display: none; }
+
+.single-post article header, .archive article header, .single-gallery article header {
   position: relative;
   width: 100%; }
-  .single-post article header .avatar, .archive article header .avatar {
-    position: absolute;
-    bottom: -30px;
-    left: 45.5%;
-    width: 60px;
-    border-radius: 100%;
-    border: 4px solid #fff;
-    z-index: 4; }
-  .single-post article header .posted-on, .single-post article header .byline, .archive article header .posted-on, .archive article header .byline {
-    display: none; }
-  .single-post article header .header-content, .archive article header .header-content {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    z-index: 4; }
-    .single-post article header .header-content .category-box, .archive article header .header-content .category-box {
-      color: #fff;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      background-color: #ed7134;
-      padding: 6px 8px; }
-    .single-post article header .header-content h1, .archive article header .header-content h1 {
-      text-transform: uppercase;
-      color: #fff; }
-    .single-post article header .header-content entry-meta, .archive article header .header-content entry-meta {
-      bottom: 0; }
+  .single-post article header .header-content h1, .archive article header .header-content h1, .single-gallery article header .header-content h1 {
+    text-transform: capitalize; }
 
-.single-gallery .comments-area, .single .comments-area, .archive .comments-area {
+.single-post .site-content article header .header-content h1:after,
+.archive .site-content article header .header-content h1:after,
+.single-gallery .site-content article header .header-content h1:after {
+  content: " ";
+  height: 3px;
+  width: 60px;
+  background-color: #404040;
+  display: block;
+  margin: 15px 0; }
+
+.single-gallery .comments-area,
+.single .comments-area, .archive .comments-area {
   max-width: 50rem;
   width: 100%;
   margin: 3rem auto; }
-  .single-gallery .comments-area .form-submit #submit, .single .comments-area .form-submit #submit, .archive .comments-area .form-submit #submit {
+  .single-gallery .comments-area .form-submit #submit,
+  .single .comments-area .form-submit #submit, .archive .comments-area .form-submit #submit {
     background-color: #b22222;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.5;
     padding: 1rem 2rem 1.0625rem 2rem;
     border: none; }
-  .single-gallery .comments-area .form-submit #submit:hover, .single .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover {
+  .single-gallery .comments-area .form-submit #submit:hover,
+  .single .comments-area .form-submit #submit:hover, .archive .comments-area .form-submit #submit:hover {
     background-color: #c84646; }
 
 .single-gallery .site-content, .single .site-content, .archive .site-content {
@@ -3574,11 +3544,8 @@ ul.photogal li .gallery-meta a {
     text-transform: uppercase;
     color: #ed7134; }
 
-.single .site-content article header .header-content h1, .archive .site-content article header .header-content h1 {
-  font-size: 1.2rem; }
-
-.single-gallery .site-content article header .header-content h1 {
-  font-size: 2rem; }
+.single .site-content article header .header-content h1, .archive .site-content article header .header-content h1, .single-gallery .site-content article header .header-content h1 {
+  font-size: 1.5rem; }
 
 .widget-area .widget_recent_entries {
   padding: 10px 10px;
@@ -3629,7 +3596,6 @@ ul.photogal li .gallery-meta a {
   font-size: 3rem;
   text-transform: uppercase; }
   .archive article header h2 a {
-    color: #fff;
     text-decoration: none; }
 
 .nav-previous a, .nav-next a {
@@ -3789,7 +3755,7 @@ ul.photogal li .gallery-meta a {
   .photogal {
     padding: 0; }
   .single .site-content article header .header-content h1, .archive .site-content article header .header-content h1 {
-    font-size: 1.5rem; } }
+    font-size: 2rem; } }
 
 @media (min-width: 690px) {
   #home-page-intro h1 {
@@ -3823,4 +3789,6 @@ ul.photogal li .gallery-meta a {
   .social-menu {
     display: block !important; }
   .single .site-content article header .header-content h1, .archive .site-content article header .header-content h1 {
-    font-size: 2rem; } }
+    font-size: 3rem; }
+  .single-gallery .site-content article header .header-content h1 {
+    font-size: 2.5rem; } }

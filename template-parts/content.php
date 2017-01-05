@@ -11,17 +11,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
     <header class="entry-header" >
-        <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" />
-        <div class="overlay"></div>
-        <?php
-        if ( 'post' === get_post_type() ) : ?>
-            <div class="entry-meta">
-                    <?php youngpros_posted_on(); ?>
-            </div><!-- .entry-meta -->
-            <?php
-        endif; ?>
-            <div class="header-content">
-                <span class="category-box"><?php  $categories = get_the_category(); if ( ! empty( $categories ) ) { echo esc_html( $categories[0]->name ); }?></span>
+        <div class="header-content">
+<!--                <span class="category-box"><?php  $categories = get_the_category(); if ( ! empty( $categories ) ) { echo esc_html( $categories[0]->name ); }?></span>-->
                 <?php
                 
 		if ( is_single() ) :
@@ -29,11 +20,18 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
-            </div>
-	</header><!-- .entry-header -->
+        </div>
+        <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" />    
+    </header><!-- .entry-header -->
         <div class="blog-row">
             <div class="entry-content">
-                <?php youngpros_post_date(); ?>
+                <?php
+                if ( 'post' === get_post_type() ) : ?>
+                    <div class="entry-meta">
+                            <?php youngpros_posted_on(); ?>
+                    </div><!-- .entry-meta -->
+                    <?php
+                endif; ?>
                     <?php
                             the_content( sprintf(
                                     /* translators: %s: Name of current post. */

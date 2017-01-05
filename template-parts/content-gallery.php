@@ -12,7 +12,8 @@
 <div class="row">
     <div class="column medium-9">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-            <header class="entry-header" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
+            <header class="entry-header" >
+                <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" />  
                 <div class="header-content">
                     <span class="episode-box"><h3>Episode <?php the_field('episode_number') ?></h3></span>
                     <?php
@@ -23,12 +24,7 @@
                             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                     endif;
 
-                    if ( 'post' === get_post_type() ) : ?>
-                    <div class="entry-meta">
-                            <?php youngpros_posted_on(); ?>
-                    </div><!-- .entry-meta -->
-                    <?php
-                    endif; ?>
+                     ?>
                 </div>
             </header><!-- .entry-header -->
             <div class="blog-row">
