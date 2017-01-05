@@ -802,11 +802,10 @@ button:hover:not(.mfp-close), .button:hover {
     .nav-previous a , .nav-next a {
         padding: 15px 18px;
         text-decoration: none;
-        background-color: #373737;
+        background-color: $dark-blue;
         display: inline-block;
         color: #fff;
         font-weight: bold;
-        text-transform: uppercase;
         transition: all 0.3s;
     } 
     .nav-previous a:hover , .nav-next a:hover {
