@@ -3539,7 +3539,7 @@ ul.photogal li .gallery-meta a {
 .single-gallery .site-content, .single .site-content, .archive .site-content {
   padding-top: 3rem; }
   .single-gallery .site-content article header .header-content .episode-box, .single .site-content article header .header-content .episode-box, .archive .site-content article header .header-content .episode-box {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     color: #ed7134; }

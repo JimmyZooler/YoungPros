@@ -13,7 +13,6 @@
     <div class="column medium-9">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
             <header class="entry-header" >
-                <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" />  
                 <div class="header-content">
                     <span class="episode-box"><h3>Episode <?php the_field('episode_number') ?></h3></span>
                     <?php
@@ -26,6 +25,7 @@
 
                      ?>
                 </div>
+                <img src="<?php echo the_post_thumbnail_url(); ?>" style="width: 100%;" /> 
             </header><!-- .entry-header -->
             <div class="blog-row">
                 <div class="entry-content">
