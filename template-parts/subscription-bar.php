@@ -16,7 +16,7 @@ Template for adding subscription bar
             <div id="mc_embed_signup">
                 <form action="//facebook.us14.list-manage.com/subscribe/post?u=aafca6008e577c3f07f4452bc&amp;id=f88e40bfc2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
-                        <p>Join A Global Conversation About What Matters.</p>
+                        <p>Join a Global Conversation that Matters.</p>
                         <div class="mc-field-group mc-bar-group">
                                 <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Name">
                         </div>
