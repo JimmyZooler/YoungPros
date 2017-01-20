@@ -22,7 +22,7 @@
                 <div class="row site-info" style="clear: all;">
 			© Young Pros 2016
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Development %1$s by %2$s', 'youngpros' ), '', '<a href="http://geometricwebdesign.com" rel="designer">Craig Rushon</a>' ); ?>
+			<?php printf( esc_html__( 'Made with ♥ by %2$s', 'youngpros' ), '', '<a href="http://geometricwebdesign.com" rel="designer">Geometric</a>' ); ?>
 		</div><!-- .site-info -->
             </div>
 	</footer><!-- #colophon -->
