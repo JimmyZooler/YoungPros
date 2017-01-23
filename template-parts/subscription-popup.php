@@ -6,8 +6,8 @@ Template for adding subscription popup
 
 <div id="subscribe-popup" class="white-popup mfp-hide">
         <div class="popup-header">
-            <h2>JOIN YOUNG PROS</h2>
-            <h3>Just enter your name & email to stay connected with an inspiring group of leaders, mentors, and entrepreneurs.</h3>
+            <h2>Want to Turn your Vision Into a<br><span><span id='twelve'>12</span> Month Game Plan?</span></h2>
+            <h3>Get the FREE Webinar and step into your power.</h3>
         </div>
         <div class="form-inner">
             <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@ Template for adding subscription popup
                             <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aafca6008e577c3f07f4452bc_f88e40bfc2" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Become a Young Pro" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear"><input type="submit" value="Let's do this!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
                 <div class="anti-spam">
                     <p>we will not spam or sell your information...</p>
@@ -44,7 +44,7 @@ Template for adding subscription popup
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         </div>
-        <div class="popup-footer">
+        <div class="popup-footer" style='display: none;'>
             <h4>Change your life and break through your barriers!</h4>
         </div>
 </div>

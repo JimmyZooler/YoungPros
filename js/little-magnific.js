@@ -3,8 +3,10 @@
  */
 
 jQuery(document).ready(function(){
-    jQuery('.open-subscribe-popup').magnificPopup({
-            type:'inline',
-            midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-          });
+    
+    setTimeout(function(){
+   
+        jQuery.magnificPopup.open({
+            items: {src: '#subscribe-popup'},type: 'inline'}, 0);
+    }, 5000);
 });
