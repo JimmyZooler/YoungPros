@@ -10,7 +10,9 @@
  */
 
 ?>
-
+        <div class="row">
+            <?php get_template_part( 'template-parts/subscription-popup', 'none' ); ?>
+        </div>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
