@@ -59,9 +59,6 @@ Template Name: Home Page
     <div id="orange-arrow" style="background-image:url('<?php echo get_template_directory_uri(); ?>/dist/images/arrow_orange.png');" ></div>
     <button class="subscription-button"><?php the_field('subscription_button_text'); ?></button>
 </a>
-<div class="row">
-    <?php get_template_part( 'template-parts/subscription-popup', 'none' ); ?>
-</div>
 <?php get_template_part( 'template-parts/subscription-bar', 'none' ); ?>
 
 <?php get_footer(); ?>
