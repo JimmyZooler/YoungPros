@@ -6,7 +6,7 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 			
-    <section id="home-page-intro" style="background-image:url('<?php echo get_template_directory_uri(); ?>/dist/images/hero_banner.png')">
+    <section id="home-page-intro" style="background-image:url('<?php echo get_template_directory_uri(); ?>/dist/images/hero_banner.png');">
         <div class='webinar-helper'>    
             <div class="webinar text-center">
                 <h1>The Young Pros Show</h1>

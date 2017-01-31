@@ -3131,11 +3131,11 @@ p {
   width: 100%;
   display: table;
   text-transform: uppercase;
-  background-size: cover;
-  background-repeat: none;
-  height: calc(100vh - 80px);
-  background-position: right;
   position: relative;
+  height: calc(100vh - 80px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   background-attachment: fixed; }
   #home-page-intro .webinar-helper {
     display: table-cell;
@@ -3732,6 +3732,10 @@ ul.photogal li .gallery-meta a {
 
 .subscription-section, #episodes {
   display: none; }
+
+@media (max-width: 650px) {
+  #home-page-intro {
+    background: none !important; } }
 
 @media (min-width: 1050px) {
   .subscription-bar {
